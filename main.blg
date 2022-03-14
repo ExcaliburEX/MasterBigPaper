@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: sudathesis.bst
+A level-1 auxiliary file: content/cover.aux
+A level-1 auxiliary file: content/abstract-zh.aux
+A level-1 auxiliary file: content/abstract-en.aux
+A level-1 auxiliary file: content/1.introduction.aux
+A level-1 auxiliary file: content/2.xxx.aux
+A level-1 auxiliary file: content/3.xxx.aux
+A level-1 auxiliary file: content/4.xxx.aux
+A level-1 auxiliary file: content/5.xxx.aux
+A level-1 auxiliary file: content/6.conclusion.aux
+A level-1 auxiliary file: content/achievement.aux
+A level-1 auxiliary file: content/work.aux
+A level-1 auxiliary file: content/thanks.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: reference.bib
+Warning--I didn't find a database entry for "greenberg2011vl2"
+Warning--I didn't find a database entry for "feng2005new"
+You've used 51 entries,
+            4952 wiz_defined-function locations,
+            1293 strings with 17772 characters,
+and the built_in function-call counts, 452759 in all, are:
+= -- 8078
+> -- 53676
+< -- 67307
++ -- 18403
+- -- 3154
+* -- 2500
+:= -- 62605
+add.period$ -- 153
+call.type$ -- 51
+change.case$ -- 100
+chr.to.int$ -- 16675
+cite$ -- 51
+duplicate$ -- 1066
+empty$ -- 3214
+format.name$ -- 1883
+if$ -- 117752
+int.to.chr$ -- 1
+int.to.str$ -- 52
+missing$ -- 0
+newline$ -- 298
+num.names$ -- 153
+pop$ -- 24096
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 47406
+stack$ -- 0
+substring$ -- 20525
+swap$ -- 55
+text.length$ -- 934
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 609
+warning$ -- 0
+while$ -- 1177
+width$ -- 0
+write$ -- 733
+(There were 2 warnings)

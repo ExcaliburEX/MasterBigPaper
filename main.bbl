@@ -1,0 +1,367 @@
+\begin{thebibliography}{51}
+\providecommand{\biband}{和}
+\providecommand{\bibetal}{等}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Rydning {\bibetal}(2018)Rydning, Reinsel, and
+  Gantz]{rydning2018digitization}
+Rydning~D~R~J~G~J, Reinsel~J, Gantz~J.
+\newblock The digitization of the world from edge to core [J].
+\newblock Framingham: International Data Corporation, 2018: 16.
+
+\bibitem[Wang {\bibetal}(2018)Wang, Zhang, and Zhang]{wang2018blockchain}
+Wang~S, Zhang~Y, Zhang~Y.
+\newblock A blockchain-based framework for data sharing with fine-grained
+  access control in decentralized storage systems [J].
+\newblock Ieee Access, 2018, 6: 38437-38450.
+
+\bibitem[Sathiamoorthy {\bibetal}(2013)Sathiamoorthy, Asteris, Papailiopoulos,
+  Dimakis, Vadali, Chen, and Borthakur]{sathiamoorthy2013xoring}
+Sathiamoorthy~M, Asteris~M, Papailiopoulos~D, Dimakis~A~G, Vadali~R, Chen~S,
+  Borthakur~D.
+\newblock Xoring elephants: Novel erasure codes for big data [J].
+\newblock arXiv preprint arXiv:1301.3791, 2013.
+
+\bibitem[Ghemawat {\bibetal}(2003)Ghemawat, Gobioff, and
+  Leung]{ghemawat2003google}
+Ghemawat~S, Gobioff~H, Leung~S~T.
+\newblock The google file system [C]//\allowbreak
+Proceedings of the nineteenth ACM symposium on Operating systems principles.
+\newblock 2003: 29-43.
+
+\bibitem[Borthakur {\bibetal}(2008)Borthakur et~al.]{borthakur2008hdfs}
+Borthakur~D, et~al.
+\newblock Hdfs architecture guide [J].
+\newblock Hadoop apache project, 2008, 53\penalty0 (1-13): 2.
+
+\bibitem[Weatherspoon {\bibetal}(2002)Weatherspoon and
+  Kubiatowicz]{weatherspoon2002erasure}
+Weatherspoon~H, Kubiatowicz~J~D.
+\newblock Erasure coding vs. replication: A quantitative comparison
+  [C]//\allowbreak
+International Workshop on Peer-to-Peer Systems.
+\newblock Springer, 2002: 328-337.
+
+\bibitem[Ford {\bibetal}(2010)Ford, Labelle, Popovici, Stokely, Truong,
+  Barroso, Grimes, and Quinlan]{ford2010availability}
+Ford~D, Labelle~F, Popovici~F~I, Stokely~M, Truong~V~A, Barroso~L, Grimes~C,
+  Quinlan~S.
+\newblock Availability in globally distributed storage systems [C]//\allowbreak
+9th {{USENIX}} Symposium on Operating Systems Design and Implementation
+  ({{OSDI}} 10).
+\newblock 2010.
+
+\bibitem[Huang {\bibetal}(2012)Huang, Simitci, Xu, Ogus, Calder, Gopalan, Li,
+  and Yekhanin]{huang2012erasure}
+Huang~C, Simitci~H, Xu~Y, Ogus~A, Calder~B, Gopalan~P, Li~J, Yekhanin~S.
+\newblock Erasure coding in windows azure storage [C]//\allowbreak
+2012 USENIX Annual Technical Conference (USENIX ATC 12).
+\newblock 2012: 15-26.
+
+\bibitem[Muralidhar {\bibetal}(2014)Muralidhar, Lloyd, Roy, Hill, Lin, Liu,
+  Pan, Shankar, Sivakumar, Tang, et~al.]{muralidhar2014f4}
+Muralidhar~S, Lloyd~W, Roy~S, Hill~C, Lin~E, Liu~W, Pan~S, Shankar~S,
+  Sivakumar~V, Tang~L, et~al.
+\newblock f4: Facebook's warm $\{$BLOB$\}$ storage system [C]//\allowbreak
+11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14).
+\newblock 2014: 383-398.
+
+\bibitem[Ovsiannikov {\bibetal}(2013)Ovsiannikov, Rus, Reeves, Sutter, Rao, and
+  Kelly]{ovsiannikov2013quantcast}
+Ovsiannikov~M, Rus~S, Reeves~D, Sutter~P, Rao~S, Kelly~J.
+\newblock The quantcast file system [J].
+\newblock Proceedings of the VLDB Endowment, 2013, 6\penalty0 (11): 1092-1101.
+
+\bibitem[Reed {\bibetal}(1960)Reed and Solomon]{reed1960polynomial}
+Reed~I~S, Solomon~G.
+\newblock Polynomial codes over certain finite fields [J].
+\newblock Journal of the society for industrial and applied mathematics, 1960,
+  8\penalty0 (2): 300-304.
+
+\bibitem[Wu {\bibetal}(2009)Wu and Dimakis]{wu2009reducing}
+Wu~Y, Dimakis~A~G.
+\newblock Reducing repair traffic for erasure coding-based storage via
+  interference alignment [C]//\allowbreak
+2009 IEEE International Symposium on Information Theory.
+\newblock IEEE, 2009: 2276-2280.
+
+\bibitem[Kamath {\bibetal}(2014)Kamath, Prakash, Lalitha, and
+  Kumar]{kamath2014codes}
+Kamath~G~M, Prakash~N, Lalitha~V, Kumar~P~V.
+\newblock Codes with local regeneration and erasure correction [J].
+\newblock IEEE Transactions on information theory, 2014, 60\penalty0 (8):
+  4637-4660.
+
+\bibitem[Li {\bibetal}(2009)Li, He, Luo, and Yi]{li2009tree}
+Li~Y, He~B, Luo~Q, Yi~K.
+\newblock Tree indexing on flash disks [C]//\allowbreak
+2009 IEEE 25th International Conference on Data Engineering.
+\newblock IEEE, 2009: 1303-1306.
+
+\bibitem[Hua {\bibetal}(2009)Hua, Jiang, Zhu, Feng, and
+  Tian]{hua2009smartstore}
+Hua~Y, Jiang~H, Zhu~Y, Feng~D, Tian~L.
+\newblock Smartstore: A new metadata organization paradigm with
+  semantic-awareness for next-generation file systems [C]//\allowbreak
+Proceedings of the conference on high performance computing networking, storage
+  and analysis.
+\newblock IEEE, 2009: 1-12.
+
+\bibitem[Weil {\bibetal}(2004)Weil, Pollack, Brandt, and
+  Miller]{weil2004dynamic}
+Weil~S~A, Pollack~K~T, Brandt~S~A, Miller~E~L.
+\newblock Dynamic metadata management for petabyte-scale file systems
+  [C]//\allowbreak
+SC'04: Proceedings of the 2004 ACM/IEEE conference on Supercomputing.
+\newblock IEEE, 2004: 4-4.
+
+\bibitem[Al-Fares {\bibetal}(2008)Al-Fares, Loukissas, and
+  Vahdat]{al2008scalable}
+Al-Fares~M, Loukissas~A, Vahdat~A.
+\newblock A scalable, commodity data center network architecture [J].
+\newblock ACM SIGCOMM computer communication review, 2008, 38\penalty0 (4):
+  63-74.
+
+\bibitem[Guo {\bibetal}(2008)Guo, Wu, Tan, Shi, Zhang, and Lu]{guo2008dcell}
+Guo~C, Wu~H, Tan~K, Shi~L, Zhang~Y, Lu~S.
+\newblock Dcell: a scalable and fault-tolerant network structure for data
+  centers [C]//\allowbreak
+Proceedings of the ACM SIGCOMM 2008 conference on Data communication.
+\newblock 2008: 75-86.
+
+\bibitem[Guo {\bibetal}(2009)Guo, Lu, Li, Wu, Zhang, Shi, Tian, Zhang, and
+  Lu]{guo2009bcube}
+Guo~C, Lu~G, Li~D, Wu~H, Zhang~X, Shi~Y, Tian~C, Zhang~Y, Lu~S.
+\newblock Bcube: a high performance, server-centric network architecture for
+  modular data centers [C]//\allowbreak
+Proceedings of the ACM SIGCOMM 2009 conference on Data communication.
+\newblock 2009: 63-74.
+
+\bibitem[Shvachko {\bibetal}(2010)Shvachko, Kuang, Radia, and
+  Chansler]{shvachko2010hadoop}
+Shvachko~K, Kuang~H, Radia~S, Chansler~R.
+\newblock The hadoop distributed file system [C]//\allowbreak
+2010 IEEE 26th symposium on mass storage systems and technologies (MSST).
+\newblock Ieee, 2010: 1-10.
+
+\bibitem[王意洁\ {\bibetal}(2017)王意洁, 许方亮, and
+  裴晓强]{王意洁2017分布式存储中的纠删码容错技术研究}
+王意洁, 许方亮, 裴晓强.
+\newblock 分布式存储中的纠删码容错技术研究 [J].
+\newblock 计算机学报, 2017, 40\penalty0 (1): 236-255.
+
+\bibitem[Lakshman {\bibetal}(2010)Lakshman and Malik]{lakshman2010cassandra}
+Lakshman~A, Malik~P.
+\newblock Cassandra: a decentralized structured storage system [J].
+\newblock ACM SIGOPS Operating Systems Review, 2010, 44\penalty0 (2): 35-40.
+
+\bibitem[Gill {\bibetal}(2016)Gill and Singh]{gill2016dynamic}
+Gill~N~K, Singh~S.
+\newblock A dynamic, cost-aware, optimized data replication strategy for
+  heterogeneous cloud data centers [J].
+\newblock Future Generation Computer Systems, 2016, 65: 10-32.
+
+\bibitem[Gai-Mei {\bibetal}(2012)Gai-Mei and Shang-Wang]{gai2012design}
+Gai-Mei~G, Shang-Wang~B.
+\newblock Design and simulation of dynamic replication strategy for the data
+  grid [C]//\allowbreak
+2012 International Conference on Industrial Control and Electronics
+  Engineering.
+\newblock IEEE, 2012: 901-903.
+
+\bibitem[Patterson {\bibetal}(1988)Patterson, Gibson, and
+  Katz]{patterson1988case}
+Patterson~D~A, Gibson~G, Katz~R~H.
+\newblock A case for redundant arrays of inexpensive disks (raid)
+  [C]//\allowbreak
+Proceedings of the 1988 ACM SIGMOD international conference on Management of
+  data.
+\newblock 1988: 109-116.
+
+\bibitem[Chen {\bibetal}(1994)Chen, Lee, Gibson, Katz, and
+  Patterson]{chen1994raid}
+Chen~P~M, Lee~E~K, Gibson~G~A, Katz~R~H, Patterson~D~A.
+\newblock Raid: High-performance, reliable secondary storage [J].
+\newblock ACM Computing Surveys (CSUR), 1994, 26\penalty0 (2): 145-185.
+
+\bibitem[Lin {\bibetal}(2004)Lin, Chiu, and Lee]{lin2004erasure}
+Lin~W, Chiu~D~M, Lee~Y.
+\newblock Erasure code replication revisited [C]//\allowbreak
+Proceedings. Fourth International Conference on Peer-to-Peer Computing, 2004.
+  Proceedings.
+\newblock IEEE, 2004: 90-97.
+
+\bibitem[Huang {\bibetal}(2019)Huang, Hou, and Yu]{huang2019lower}
+Huang~S, Hou~H, Yu~X.
+\newblock A lower bound on disk reads for single information disk failure
+  recovery and one recovery scheme for evenodd (p, 3) [C]//\allowbreak
+2019 Ninth International Workshop on Signal Design and its Applications in
+  Communications (IWSDA).
+\newblock IEEE, 2019: 1-5.
+
+\bibitem[Xu {\bibetal}(1999)Xu and Bruck]{xu1999x}
+Xu~L, Bruck~J.
+\newblock X-code: Mds array codes with optimal encoding [J].
+\newblock IEEE Transactions on Information Theory, 1999, 45\penalty0 (1):
+  272-276.
+
+\bibitem[Roth {\bibetal}(1989)Roth and Lempel]{roth1989mds}
+Roth~R~M, Lempel~A.
+\newblock On mds codes via cauchy matrices [J].
+\newblock IEEE transactions on information theory, 1989, 35\penalty0 (6):
+  1314-1319.
+
+\bibitem[Xia {\bibetal}(2007)Xia and Chien]{xia2007robustore}
+Xia~H, Chien~A~A.
+\newblock Robustore: a distributed storage architecture with robust and high
+  performance [C]//\allowbreak
+SC'07: Proceedings of the 2007 ACM/IEEE Conference on Supercomputing.
+\newblock IEEE, 2007: 1-11.
+
+\bibitem[Kubiatowicz {\bibetal}(2000)Kubiatowicz, Bindel, Chen, Czerwinski,
+  Eaton, Geels, Gummadi, Rhea, Weatherspoon, Weimer,
+  et~al.]{kubiatowicz2000oceanstore}
+Kubiatowicz~J, Bindel~D, Chen~Y, Czerwinski~S, Eaton~P, Geels~D, Gummadi~R,
+  Rhea~S, Weatherspoon~H, Weimer~W, et~al.
+\newblock Oceanstore: An architecture for global-scale persistent storage [J].
+\newblock ACM SIGOPS Operating Systems Review, 2000, 34\penalty0 (5): 190-201.
+
+\bibitem[Blaum {\bibetal}(1996)Blaum, Bruck, and Vardy]{blaum1996mds}
+Blaum~M, Bruck~J, Vardy~A.
+\newblock Mds array codes with independent parity symbols [J].
+\newblock IEEE Transactions on Information Theory, 1996, 42\penalty0 (2):
+  529-542.
+
+\bibitem[Plank(2009)]{plank2009raid}
+Plank~J~S.
+\newblock The raid-6 liber8tion code [J].
+\newblock The International Journal of High Performance Computing Applications,
+  2009, 23\penalty0 (3): 242-251.
+
+\bibitem[Hafner {\bibetal}(2005)Hafner, Deenadhayalan, Rao, and
+  Tomlin]{hafner2005matrix}
+Hafner~J~L, Deenadhayalan~V, Rao~K, Tomlin~J~A.
+\newblock Matrix methods for lost data reconstruction in erasure codes.
+  [C]//\allowbreak
+FAST: volume~5.
+\newblock 2005: 15-30.
+
+\bibitem[Li {\bibetal}(2016)Li, Li, Stones, Wang, Li, and Liu]{li2016procode}
+Li~P, Li~J, Stones~R~J, Wang~G, Li~Z, Liu~X.
+\newblock Procode: A proactive erasure coding scheme for cloud storage systems
+  [C]//\allowbreak
+2016 IEEE 35th Symposium on Reliable Distributed Systems (SRDS).
+\newblock IEEE, 2016: 219-228.
+
+\bibitem[Blaum {\bibetal}(1995)Blaum, Brady, Bruck, and
+  Menon]{blaum1995evenodd}
+Blaum~M, Brady~J, Bruck~J, Menon~J.
+\newblock Evenodd: An efficient scheme for tolerating double disk failures in
+  raid architectures [J].
+\newblock IEEE Transactions on computers, 1995, 44\penalty0 (2): 192-202.
+
+\bibitem[Corbett {\bibetal}(2004)Corbett, English, Goel, Grcanac, Kleiman,
+  Leong, and Sankar]{corbett2004row}
+Corbett~P, English~B, Goel~A, Grcanac~T, Kleiman~S, Leong~J, Sankar~S.
+\newblock Row-diagonal parity for double disk failure correction
+  [C]//\allowbreak
+Proceedings of the 3rd USENIX Conference on File and Storage Technologies.
+\newblock San Francisco, CA, 2004: 1-14.
+
+\bibitem[Feng {\bibetal}(2010)Feng, Chen, and Summerville]{feng2010eeo}
+Feng~J, Chen~Y, Summerville~D.
+\newblock Eeo: An efficient mds-like raid-6 code for parallel implementation
+  [C]//\allowbreak
+2010 IEEE Sarnoff Symposium.
+\newblock IEEE, 2010: 1-5.
+
+\bibitem[Huang {\bibetal}(2008)Huang and Xu]{huang2008star}
+Huang~C, Xu~L.
+\newblock Star: An efficient coding scheme for correcting triple storage node
+  failures [J].
+\newblock IEEE Transactions on Computers, 2008, 57\penalty0 (7): 889-901.
+
+\bibitem[Ahlswede {\bibetal}(2000)Ahlswede, Cai, Li, and
+  Yeung]{ahlswede2000network}
+Ahlswede~R, Cai~N, Li~S~Y, Yeung~R~W.
+\newblock Network information flow [J].
+\newblock IEEE Transactions on information theory, 2000, 46\penalty0 (4):
+  1204-1216.
+
+\bibitem[Dimakis {\bibetal}(2010)Dimakis, Godfrey, Wu, Wainwright, and
+  Ramchandran]{dimakis2010network}
+Dimakis~A~G, Godfrey~P~B, Wu~Y, Wainwright~M~J, Ramchandran~K.
+\newblock Network coding for distributed storage systems [J].
+\newblock IEEE transactions on information theory, 2010, 56\penalty0 (9):
+  4539-4551.
+
+\bibitem[Wu {\bibetal}(2007)Wu, Dimakis, and Ramchandran]{wu2007deterministic}
+Wu~Y, Dimakis~A~G, Ramchandran~K.
+\newblock Deterministic regenerating codes for distributed storage
+  [C]//\allowbreak
+Allerton conference on control, computing, and communication.
+\newblock IEEE Press Washington DC, 2007: 1-5.
+
+\bibitem[Calder {\bibetal}(2011)Calder, Wang, Ogus, Nilakantan, Skjolsvold,
+  McKelvie, Xu, Srivastav, Wu, Simitci, et~al.]{calder2011windows}
+Calder~B, Wang~J, Ogus~A, Nilakantan~N, Skjolsvold~A, McKelvie~S, Xu~Y,
+  Srivastav~S, Wu~J, Simitci~H, et~al.
+\newblock Windows azure storage: a highly available cloud storage service with
+  strong consistency [C]//\allowbreak
+Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles.
+\newblock 2011: 143-157.
+
+\bibitem[Huang {\bibetal}(2013)Huang, Chen, and Li]{huang2013pyramid}
+Huang~C, Chen~M, Li~J.
+\newblock Pyramid codes: Flexible schemes to trade space for access efficiency
+  in reliable data storage systems [J].
+\newblock ACM Transactions on Storage (TOS), 2013, 9\penalty0 (1): 1-28.
+
+\bibitem[周松\ {\bibetal}(2011)周松 and 王意洁]{周松2011expyramid}
+周松, 王意洁.
+\newblock EXPyramid:
+  一种灵活的基于阵列结构的高容错低修复成本编码方案 [J].
+\newblock 计算机研究与发展, 2011, 1.
+
+\bibitem[Woitaszek {\bibetal}(2007)Woitaszek and Tufo]{woitaszek2007tornado}
+Woitaszek~M, Tufo~H~M.
+\newblock Tornado codes for maid archival storage [C]//\allowbreak
+24th IEEE Conference on Mass Storage Systems and Technologies (MSST 2007).
+\newblock IEEE, 2007: 221-226.
+
+\bibitem[Gallager(1962)]{gallager1962low}
+Gallager~R.
+\newblock Low-density parity-check codes [J].
+\newblock IRE Transactions on information theory, 1962, 8\penalty0 (1): 21-28.
+
+\bibitem[Hafner(2005)]{hafner2005weaver}
+Hafner~J~L.
+\newblock Weaver codes: Highly fault tolerant erasure codes for storage
+  systems. [C]//\allowbreak
+Fast: volume~5.
+\newblock 2005: 16-16.
+
+\bibitem[Hafner(2006)]{hafner2006hover}
+Hafner~J~L.
+\newblock Hover erasure codes for disk arrays [C]//\allowbreak
+International Conference on Dependable Systems and Networks (DSN'06).
+\newblock IEEE, 2006: 217-226.
+
+\bibitem[Shah {\bibetal}(2010)Shah, Rashmi, and Kumar]{shah2010flexible}
+Shah~N~B, Rashmi~K, Kumar~P~V.
+\newblock A flexible class of regenerating codes for distributed storage
+  [C]//\allowbreak
+2010 IEEE International Symposium on Information Theory.
+\newblock IEEE, 2010: 1943-1947.
+
+\end{thebibliography}

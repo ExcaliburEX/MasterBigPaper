@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{68}
 \providecommand{\biband}{和}
 \providecommand{\bibetal}{等}
 \providecommand{\natexlab}[1]{#1}
@@ -376,5 +376,114 @@ Shah~N~B, Rashmi~K, Kumar~P~V.
   [C]//\allowbreak
 2010 IEEE International Symposium on Information Theory.
 \newblock IEEE, 2010: 1943-1947.
+
+\bibitem[Li {\bibetal}(2010)Li, Yang, Wang, and Li]{li2010tree}
+Li~J, Yang~S, Wang~X, Li~B.
+\newblock Tree-structured data regeneration in distributed storage systems with
+  regenerating codes [C]//\allowbreak
+2010 Proceedings IEEE INFOCOM.
+\newblock IEEE, 2010: 1-9.
+
+\bibitem[许方亮\ {\bibetal}(2013)许方亮, 王意洁, and
+  裴晓强]{许方亮2013ntar}
+许方亮, 王意洁, 裴晓强.
+\newblock NTar: 基于网络拓扑的纠删码树型修复方法 [J].
+\newblock 计算机研究与发展, 2013, 2.
+
+\bibitem[Weidong {\bibetal}(2013)Weidong, Yijie, and
+  Xiaoqiang]{weidong2013tree}
+Weidong~S, Yijie~W, Xiaoqiang~P.
+\newblock Tree-structured parallel regeneration for multiple data losses in
+  distributed storage systems based on erasure codes [J].
+\newblock China Communications, 2013, 10\penalty0 (4): 113-125.
+
+\bibitem[Xiang {\bibetal}(2010)Xiang, Xu, Lui, and Chang]{xiang2010optimal}
+Xiang~L, Xu~Y, Lui~J~C, Chang~Q.
+\newblock Optimal recovery of single disk failure in rdp code storage systems
+  [J].
+\newblock ACM SIGMETRICS Performance Evaluation Review, 2010, 38\penalty0 (1):
+  119-130.
+
+\bibitem[Khan {\bibetal}(2012)Khan, Burns, Plank, Pierce, and
+  Huang]{khan2012rethinking}
+Khan~O, Burns~R~C, Plank~J~S, Pierce~W, Huang~C.
+\newblock Rethinking erasure codes for cloud file systems: minimizing i/o for
+  recovery and degraded reads. [C]//\allowbreak
+FAST: volume~20.
+\newblock 2012: 2208461-2208481.
+
+\bibitem[Zhu {\bibetal}(2014)Zhu, Lin, Lee, and Xu]{zhu2014boosting}
+Zhu~Y, Lin~J, Lee~P~P, Xu~Y.
+\newblock Boosting degraded reads in heterogeneous erasure-coded storage
+  systems [J].
+\newblock IEEE Transactions on Computers, 2014, 64\penalty0 (8): 2145-2157.
+
+\bibitem[Niu {\bibetal}(2013)Niu, Xu, Zhu, and Zhang]{niu2013phr}
+Niu~F, Xu~Y, Zhu~Y, Zhang~Y.
+\newblock Phr: A pipelined heterogeneous recovery for raid6-coded storage
+  systems [C]//\allowbreak
+2013 International Conference on Parallel and Distributed Computing,
+  Applications and Technologies.
+\newblock IEEE, 2013: 325-331.
+
+\bibitem[Zhu {\bibetal}(2012)Zhu, Lee, Xiang, Xu, and Gao]{zhu2012cost}
+Zhu~Y, Lee~P~P, Xiang~L, Xu~Y, Gao~L.
+\newblock A cost-based heterogeneous recovery scheme for distributed storage
+  systems with raid-6 codes [C]//\allowbreak
+IEEE/IFIP International Conference on Dependable Systems and Networks (DSN
+  2012).
+\newblock IEEE, 2012: 1-12.
+
+\bibitem[Popa {\bibetal}(2013)Popa, Yalagandula, Banerjee, Mogul, Turner, and
+  Santos]{popa2013elasticswitch}
+Popa~L, Yalagandula~P, Banerjee~S, Mogul~J~C, Turner~Y, Santos~J~R.
+\newblock Elasticswitch: Practical work-conserving bandwidth guarantees for
+  cloud computing [C]//\allowbreak
+Proceedings of the ACM SIGCOMM 2013 conference on SIGCOMM.
+\newblock 2013: 351-362.
+
+\bibitem[Li {\bibetal}(2018)Li, Lan, Ra, and Panta]{li2018joint}
+Li~S, Lan~T, Ra~M~R, Panta~R.
+\newblock Joint scheduling and source selection for background traffic in
+  erasure-coded storage [J].
+\newblock IEEE Transactions on Parallel and Distributed Systems, 2018,
+  29\penalty0 (12): 2826-2837.
+
+\bibitem[Rashmi {\bibetal}(2014)Rashmi, Shah, Gu, Kuang, Borthakur, and
+  Ramchandran]{rashmi2014hitchhiker}
+Rashmi~K~V, Shah~N~B, Gu~D, Kuang~H, Borthakur~D, Ramchandran~K.
+\newblock A" hitchhiker's" guide to fast and efficient data reconstruction in
+  erasure-coded data centers [C]//\allowbreak
+Proceedings of the 2014 ACM conference on SIGCOMM.
+\newblock 2014: 331-342.
+
+\bibitem[Xia {\bibetal}(2015)Xia, Saxena, Blaum, and Pease]{xia2015tale}
+Xia~M, Saxena~M, Blaum~M, Pease~D~A.
+\newblock A tale of two erasure codes in $\{$HDFS$\}$ [C]//\allowbreak
+13th USENIX conference on file and storage technologies (FAST 15).
+\newblock 2015: 213-226.
+
+\bibitem[Dimakis {\bibetal}(2007)Dimakis, Godfrey, Wainwright, and
+  Ramchandran]{dimakis2007benefits}
+Dimakis~A~G, Godfrey~P~B, Wainwright~M~J, Ramchandran~K.
+\newblock The benefits of network coding for peer-to-peer storage systems
+  [C]//\allowbreak
+Third Workshop on Network Coding, Theory, and Applications.
+\newblock 2007.
+
+\bibitem[Pamies-Juarez {\bibetal}(2016)Pamies-Juarez, Blagojevic, Mateescu,
+  Gyuot, Gad, and Bandic]{pamies2016opening}
+Pamies-Juarez~L, Blagojevic~F, Mateescu~R, Gyuot~C, Gad~E~E, Bandic~Z.
+\newblock Opening the chrysalis: On the real repair performance of $\{$MSR$\}$
+  codes [C]//\allowbreak
+14th USENIX conference on file and storage technologies (FAST 16).
+\newblock 2016: 81-94.
+
+\bibitem[Ye {\bibetal}(2017)Ye, Feng, Hu, and Liu]{ye2017hybrid}
+Ye~L, Feng~D, Hu~Y, Liu~Q.
+\newblock Hybrid-rc: Flexible erasure codes with optimized recovery performance
+  and low storage overhead [C]//\allowbreak
+2017 IEEE 36th Symposium on Reliable Distributed Systems (SRDS).
+\newblock IEEE, 2017: 124-133.
 
 \end{thebibliography}

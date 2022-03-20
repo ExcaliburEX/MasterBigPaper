@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  14 MAR 2022 11:25
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  20 MAR 2022 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1719,9 +1719,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3] [4]
 File: figures/1.2.pdf Graphic file (type pdf)
 <use figures/1.2.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [5]
 File: figures/1.3.pdf Graphic file (type pdf)
 <use figures/1.3.pdf>
@@ -1738,42 +1735,59 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figures/1.5.pdf Graphic file (type pdf)
 <use figures/1.5.pdf>
 
-Underfull \vbox (badness 3088) has occurred while \output is active []
+Underfull \vbox (badness 3240) has occurred while \output is active []
 
  [9]
 File: figures/1.6.pdf Graphic file (type pdf)
 <use figures/1.6.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [10]
 File: figures/1.7.pdf Graphic file (type pdf)
 <use figures/1.7.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [11]
 File: figures/1.8.pdf Graphic file (type pdf)
 <use figures/1.8.pdf>
-
+ [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]) [13] [14]
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]) [16]
 \openout2 = `content/2.xxx.aux'.
 
  (./content/2.xxx.tex
 第二章
-) [15
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17
 
 
 
 
 ]
+Overfull \hbox (11.7057pt too wide) in paragraph at lines 68--88
+[]\TU/TimesNewRoman(0)/m/n/12.045 MSR \TU/SimSun(1)/m/n/12.045 改 进。|  在 多 个 同 时 发 生 的 故 障 事 件 中，|  单 个 节 点 故 障 的 恢 复 率 可 达 到 $\OT1/txr/m/n/12.045 98%$$[]$\TU/SimSun(1)/m/n/12.045 。|
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+File: figures/2.1.pdf Graphic file (type pdf)
+<use figures/2.1.pdf>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19] [20]
 \openout2 = `content/3.xxx.aux'.
 
  (./content/3.xxx.tex
 第三章
-) [16
+) [21
 
 
 
@@ -1783,7 +1797,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./content/4.xxx.tex
 第四章
-) [17
+) [22
 
 
 
@@ -1793,7 +1807,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./content/5.xxx.tex
 第五章
-) [18
+) [23
 
 
 
@@ -1803,7 +1817,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  (./content/6.conclusion.tex
 第六章
-) [19
+) [24
 
 
 
@@ -1811,33 +1825,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] (./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20
+ [25
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]) [24]
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]) [30]
 \openout2 = `content/achievement.aux'.
 
  (./content/achievement.tex
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sc' in size <12.045> not available
 (Font)              Font shape `TU/TeXGyreTermes(0)/m/sc' tried instead on input line 41.
-) [25
+) [31
 
 
 
 ]
 \openout2 = `content/work.aux'.
 
- (./content/work.tex) [26
+ (./content/work.tex) [32
 
 
 
@@ -1845,7 +1862,7 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sc' in size <12.045> not a
 ]
 \openout2 = `content/thanks.aux'.
 
- (./content/thanks.tex) [27
+ (./content/thanks.tex) [33
 
 
 
@@ -1870,7 +1887,7 @@ File: pdf-pages/空白页.pdf Graphic file (type pdf)
 <use pdf-pages/空白页.pdf, page 1>
 File: pdf-pages/空白页.pdf Graphic file (type pdf)
 <use pdf-pages/空白页.pdf, page 1>
-[28
+[34
 
 
 ]
@@ -1893,7 +1910,7 @@ File: pdf-pages/委员会决议.pdf Graphic file (type pdf)
 <use pdf-pages/委员会决议.pdf, page 1>
 File: pdf-pages/委员会决议.pdf Graphic file (type pdf)
 <use pdf-pages/委员会决议.pdf, page 1>
-[29]
+[35]
 \tf@thm=\write6
 \openout6 = `main.thm'.
 
@@ -1903,15 +1920,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47188pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 807024BBAF596A1429702BA515DDD0D0;4973.
+(rerunfilecheck)             Checksum: E9DEAEA5ED25065A173A7A38DCA248F0;4973.
  ) 
 Here is how much of TeX's memory you used:
- 47043 strings out of 477220
- 1107171 string characters out of 5834002
+ 47112 strings out of 477220
+ 1109060 string characters out of 5834002
  1601602 words of memory out of 5000000
- 65705 multiletter control sequences out of 15000+600000
- 440117 words of font info for 210 fonts, out of 8000000 for 9000
+ 65772 multiletter control sequences out of 15000+600000
+ 440125 words of font info for 211 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 114i,17n,118p,714b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,17n,118p,714b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (39 pages).
+Output written on main.pdf (45 pages).

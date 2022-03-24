@@ -88,7 +88,7 @@ The LaTeX template for thesis of suda]
 %%%%%%%%%% page margin %%%%%%%%%%
 % 页面设置
 \RequirePackage{geometry}
-\newgeometry{
+\newgeometry{   
     top=3.3cm, bottom=2.7cm, left=2.75cm, right=2.75cm,
     headheight=2.6cm, %页眉高度，页眉距边界2.6cm
     headsep=0.4cm, %页眉到正文长度

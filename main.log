@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  20 MAR 2022 14:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.2.3)  24 MAR 2022 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1305,11 +1305,17 @@ Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
 File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
  (e:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))) (e:/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
+))) (e:/texlive/2020/texmf-dist/tex/latex/dashrule/dashrule.sty
+Package: dashrule 2013/03/28 v1.3 Dashed rules
+ (e:/texlive/2020/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)
+\c@hdr@segments=\count428
+) (e:/texlive/2020/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks68
 \footnotemargin=\dimen413
-\c@pp@next@reset=\count428
+\c@pp@next@reset=\count429
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1328,12 +1334,12 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
  (e:/texlive/2020/texmf-dist/tex/latex/pdfpages/ppxetex.def
 File: ppxetex.def 2021/01/09 v0.5r Pdfpages driver for XeTeX (AM)
 )
-\pdfpages@includegraphics@status=\count429
+\pdfpages@includegraphics@status=\count430
 \AM@pagebox=\box106
 \AM@global@opts=\toks69
-\AM@pagecnt=\count430
+\AM@pagecnt=\count431
 \AM@toc@title=\toks70
-\c@AM@survey=\count431
+\c@AM@survey=\count432
 \AM@templatesizebox=\box107
 )
 
@@ -1362,47 +1368,51 @@ Package fontspec Info: Font family 'TeXGyreTermes(0)' created for font 'TeX
 (fontspec)             <->"TeX Gyre
 (fontspec)             Termes/BI/OT:script=latn;language=dflt;+smcp;"
 
- (./main.aux (./content/cover.aux) (./content/abstract-zh.aux) (./content/abstract-en.aux) (./content/1.introduction.aux) (./content/2.xxx.aux) (./content/3.xxx.aux) (./content/4.xxx.aux) (./content/5.xxx.aux) (./content/6.conclusion.aux) (./content/achievement.aux) (./content/work.aux) (./content/thanks.aux))
+ (./main.aux (./content/cover.aux) (./content/abstract-zh.aux) (./content/abstract-en.aux) (./content/1.introduction.aux) (./content/2.xxx.aux
+
+LaTeX Warning: Label `fig:2.3' multiply defined.
+
+) (./content/3.xxx.aux) (./content/achievement.aux) (./content/work.aux) (./content/thanks.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 39.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 41.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 41.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 39.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 41.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 39.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 41.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 39.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 39.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 41.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 41.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 39.
+LaTeX Info: Redefining \selectfont on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1438,7 +1448,7 @@ LaTeX Info: Redefining \selectfont on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 41.
 (e:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (e:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1446,11 +1456,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (e:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count432
+\c@section@level=\count433
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1458,11 +1468,11 @@ LaTeX Info: Redefining \nameref on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count433
+\c@lstlisting=\count434
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into your preamble.
- on input line 39.
+ on input line 41.
 
 (e:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1500,31 +1510,31 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=4;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 44.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 46.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 44.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 46.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 46.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 44.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 46.
  (e:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 44.
+(Font)              size <10.95> substituted on input line 46.
 
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 44.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 46.
 (e:/texlive/2020/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 44.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 46.
  (e:/texlive/2020/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
@@ -1533,28 +1543,28 @@ File: suda.ps Graphic file (type eps)
 File: sudamark2.png Graphic file (type bmp)
 <sudamark2.png>
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 44--44
+Overfull \hbox (1.0pt too wide) in paragraph at lines 46--46
 []| $[]$| 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 44--44
+Overfull \hbox (1.0pt too wide) in paragraph at lines 46--46
 []| $[]$| 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 44--44
+Overfull \hbox (1.0pt too wide) in paragraph at lines 46--46
 []| $[]$| 
  []
 
 
-Overfull \hbox (1.0pt too wide) in paragraph at lines 44--44
+Overfull \hbox (1.0pt too wide) in paragraph at lines 46--46
 []| $[]$| 
  []
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
-(Font)              size <8> substituted on input line 44.
+(Font)              size <8> substituted on input line 46.
 
 [1
 
@@ -1660,7 +1670,10 @@ File: pdf-pages/空白页.pdf Graphic file (type pdf)
 
 
 
-] (./main.toc [3
+] (./main.toc
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
 
 
 
@@ -1769,55 +1782,73 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (11.7057pt too wide) in paragraph at lines 68--88
-[]\TU/TimesNewRoman(0)/m/n/12.045 MSR \TU/SimSun(1)/m/n/12.045 改 进。|  在 多 个 同 时 发 生 的 故 障 事 件 中，|  单 个 节 点 故 障 的 恢 复 率 可 达 到 $\OT1/txr/m/n/12.045 98%$$[]$\TU/SimSun(1)/m/n/12.045 。|
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
 File: figures/2.1.pdf Graphic file (type pdf)
 <use figures/2.1.pdf>
-)
+ [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19] [20]
+ [19]
+File: figures/2.3-1.pdf Graphic file (type pdf)
+<use figures/2.3-1.pdf>
+File: figures/2.3-2.pdf Graphic file (type pdf)
+<use figures/2.3-2.pdf>
+File: figures/2.3-3.pdf Graphic file (type pdf)
+<use figures/2.3-3.pdf>
+File: figures/2.3-4.pdf Graphic file (type pdf)
+<use figures/2.3-4.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+File: figures/2.2.pdf Graphic file (type pdf)
+<use figures/2.2.pdf>
+File: figures/2.3.pdf Graphic file (type pdf)
+<use figures/2.3.pdf>
+
+Underfull \vbox (badness 3724) has occurred while \output is active []
+
+ [25]
+File: figures/2.6.pdf Graphic file (type pdf)
+<use figures/2.6.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+File: figures/2.7.pdf Graphic file (type pdf)
+<use figures/2.7.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+File: figures/2.4.pdf Graphic file (type pdf)
+<use figures/2.4.pdf>
+ [29]
+File: figures/2.5.pdf Graphic file (type pdf)
+<use figures/2.5.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]) [31]
 \openout2 = `content/3.xxx.aux'.
 
  (./content/3.xxx.tex
 第三章
-) [21
-
-
-
-
-]
-\openout2 = `content/4.xxx.aux'.
-
- (./content/4.xxx.tex
-第四章
-) [22
-
-
-
-
-]
-\openout2 = `content/5.xxx.aux'.
-
- (./content/5.xxx.tex
-第五章
-) [23
-
-
-
-
-]
-\openout2 = `content/6.conclusion.aux'.
-
- (./content/6.conclusion.tex
-第六章
-) [24
+) [32
 
 
 
@@ -1825,36 +1856,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] (./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
+ [33
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
+ [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]) [30]
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]) [42]
 \openout2 = `content/achievement.aux'.
 
  (./content/achievement.tex
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sc' in size <12.045> not available
 (Font)              Font shape `TU/TeXGyreTermes(0)/m/sc' tried instead on input line 41.
-) [31
+) [43
 
 
 
 ]
 \openout2 = `content/work.aux'.
 
- (./content/work.tex) [32
+ (./content/work.tex) [44
 
 
 
@@ -1862,7 +1905,7 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sc' in size <12.045> not a
 ]
 \openout2 = `content/thanks.aux'.
 
- (./content/thanks.tex) [33
+ (./content/thanks.tex) [45
 
 
 
@@ -1887,7 +1930,7 @@ File: pdf-pages/空白页.pdf Graphic file (type pdf)
 <use pdf-pages/空白页.pdf, page 1>
 File: pdf-pages/空白页.pdf Graphic file (type pdf)
 <use pdf-pages/空白页.pdf, page 1>
-[34
+[46
 
 
 ]
@@ -1910,25 +1953,28 @@ File: pdf-pages/委员会决议.pdf Graphic file (type pdf)
 <use pdf-pages/委员会决议.pdf, page 1>
 File: pdf-pages/委员会决议.pdf Graphic file (type pdf)
 <use pdf-pages/委员会决议.pdf, page 1>
-[35]
+[47]
 \tf@thm=\write6
 \openout6 = `main.thm'.
 
- (./main.aux (./content/cover.aux) (./content/abstract-zh.aux) (./content/abstract-en.aux) (./content/1.introduction.aux) (./content/2.xxx.aux) (./content/3.xxx.aux) (./content/4.xxx.aux) (./content/5.xxx.aux) (./content/6.conclusion.aux) (./content/achievement.aux) (./content/work.aux) (./content/thanks.aux))
+ (./main.aux (./content/cover.aux) (./content/abstract-zh.aux) (./content/abstract-en.aux) (./content/1.introduction.aux) (./content/2.xxx.aux) (./content/3.xxx.aux) (./content/achievement.aux) (./content/work.aux) (./content/thanks.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47188pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9DEAEA5ED25065A173A7A38DCA248F0;4973.
+(rerunfilecheck)             Checksum: 2DC0774D950DC9732209E0844424FFFE;4829.
  ) 
 Here is how much of TeX's memory you used:
- 47112 strings out of 477220
- 1109060 string characters out of 5834002
- 1601602 words of memory out of 5000000
- 65772 multiletter control sequences out of 15000+600000
- 440125 words of font info for 211 fonts, out of 8000000 for 9000
+ 47392 strings out of 477220
+ 1118542 string characters out of 5834002
+ 1603602 words of memory out of 5000000
+ 66054 multiletter control sequences out of 15000+600000
+ 444520 words of font info for 225 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 114i,17n,118p,714b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,17n,118p,717b,803s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (45 pages).
+Output written on main.pdf (57 pages).

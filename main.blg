@@ -8,9 +8,6 @@ A level-1 auxiliary file: content/abstract-en.aux
 A level-1 auxiliary file: content/1.introduction.aux
 A level-1 auxiliary file: content/2.xxx.aux
 A level-1 auxiliary file: content/3.xxx.aux
-A level-1 auxiliary file: content/4.xxx.aux
-A level-1 auxiliary file: content/5.xxx.aux
-A level-1 auxiliary file: content/6.conclusion.aux
 A level-1 auxiliary file: content/achievement.aux
 A level-1 auxiliary file: content/work.aux
 A level-1 auxiliary file: content/thanks.aux
@@ -22,44 +19,46 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
-You've used 68 entries,
+Warning--empty journal in dean2004mapreduce
+You've used 100 entries,
             4952 wiz_defined-function locations,
-            1376 strings with 21536 characters,
-and the built_in function-call counts, 627641 in all, are:
-= -- 10989
-> -- 74569
-< -- 93636
-+ -- 25586
-- -- 4312
-* -- 3420
-:= -- 86769
-add.period$ -- 204
-call.type$ -- 68
-change.case$ -- 133
-chr.to.int$ -- 23221
-cite$ -- 68
-duplicate$ -- 1431
-empty$ -- 4310
-format.name$ -- 2611
-if$ -- 163171
-int.to.chr$ -- 1
-int.to.str$ -- 69
+            1527 strings with 28658 characters,
+and the built_in function-call counts, 940666 in all, are:
+= -- 16279
+> -- 111947
+< -- 140595
++ -- 38379
+- -- 6303
+* -- 5113
+:= -- 130048
+add.period$ -- 300
+call.type$ -- 100
+change.case$ -- 197
+chr.to.int$ -- 34781
+cite$ -- 101
+duplicate$ -- 2102
+empty$ -- 6378
+format.name$ -- 3982
+if$ -- 244583
+int.to.chr$ -- 4
+int.to.str$ -- 101
 missing$ -- 0
-newline$ -- 393
-num.names$ -- 204
-pop$ -- 33393
+newline$ -- 574
+num.names$ -- 300
+pop$ -- 50064
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 100
 quote$ -- 0
-skip$ -- 65816
+skip$ -- 98886
 stack$ -- 0
-substring$ -- 28449
-swap$ -- 74
-text.length$ -- 1287
+substring$ -- 42390
+swap$ -- 112
+text.length$ -- 1942
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 810
-warning$ -- 0
-while$ -- 1609
+type$ -- 1184
+warning$ -- 1
+while$ -- 2416
 width$ -- 0
-write$ -- 969
+write$ -- 1403
+(There was 1 warning)

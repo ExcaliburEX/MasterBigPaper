@@ -67,8 +67,10 @@ The LaTeX template for thesis of suda]
 
 \newcommand{\kai}{\CJKfamily{kai}}
 %windows 宋体
-\setCJKfamilyfont{song}{SimSun}
-\newcommand\song{\CJKfamily{song}}
+% \setCJKfamilyfont{song}{SimSun}
+% \newcommand\song{\CJKfamily{song}}
+\setCJKfamilyfont{zhsong}{SimSun}
+\newcommand\song{\CJKfamily{zhsong}}
 
 \newcommand{\xiaochuhao}{\fontsize{32pt}{\baselineskip}\selectfont}
 \newcommand{\xiaoer}{\fontsize{18pt}{27pt}\selectfont}          % 小二, 1.5行距
@@ -250,7 +252,7 @@ The LaTeX template for thesis of suda]
 \bibliographystyle{sudathesis} % 参考文献格式
 \RequirePackage[sort&compress]{natbib}
 \bibpunct{[}{]}{,}{s}{,}{\textsuperscript{,}}
-\setlength{\bibsep}{0pt}
+\setlength{\bibsep}{5pt}
 \renewcommand{\citep}[1]{(\citet{#1})}
 
 %%%%%%%%%% table %%%%%%%%%%

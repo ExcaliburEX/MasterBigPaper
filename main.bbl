@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{104}
 \providecommand{\biband}{和}
 \providecommand{\bibetal}{等}
 \providecommand{\natexlab}[1]{#1}
@@ -721,5 +721,37 @@ Zeng~H, Zhang~C, Wu~C, Yang~G, Li~J, Xue~G, Guo~M.
   cloud storage systems [C]//\allowbreak
 2020 IEEE 38th International Conference on Computer Design (ICCD).
 \newblock IEEE, 2020: 105-112.
+
+\bibitem[Bhagwan {\bibetal}(2004)Bhagwan, Tati, Cheng, Savage, and
+  Voelker]{bhagwan2004total}
+Bhagwan~R, Tati~K, Cheng~Y, Savage~S, Voelker~G~M.
+\newblock Total recall: System support for automated availability management.
+  [C]//\allowbreak
+Nsdi: volume~4.
+\newblock 2004: 25-25.
+
+\bibitem[Li {\bibetal}(2019)Li, Li, Lee, and Hu]{li2019openec}
+Li~X, Li~R, Lee~P~P, Hu~Y.
+\newblock $\{$OpenEC$\}$: Toward unified and configurable erasure coding
+  management in distributed storage systems [C]//\allowbreak
+17th USENIX Conference on File and Storage Technologies (FAST 19).
+\newblock 2019: 331-344.
+
+\bibitem[Silberstein {\bibetal}(2014)Silberstein, Ganesh, Wang, Alvisi, and
+  Dahlin]{silberstein2014lazy}
+Silberstein~M, Ganesh~L, Wang~Y, Alvisi~L, Dahlin~M.
+\newblock Lazy means smart: Reducing repair bandwidth costs in erasure-coded
+  distributed storage [C]//\allowbreak
+Proceedings of International Conference on Systems and Storage.
+\newblock 2014: 1-7.
+
+\bibitem[Rashmi {\bibetal}(2013)Rashmi, Shah, Gu, Kuang, Borthakur, and
+  Ramchandran]{rashmi2013solution}
+Rashmi~K~V, Shah~N~B, Gu~D, Kuang~H, Borthakur~D, Ramchandran~K.
+\newblock A solution to the network challenges of data recovery in
+  erasure-coded distributed storage systems: A study on the facebook warehouse
+  cluster [C]//\allowbreak
+5th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 13).
+\newblock 2013.
 
 \end{thebibliography}

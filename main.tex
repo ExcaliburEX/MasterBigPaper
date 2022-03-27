@@ -16,6 +16,12 @@
 \usepackage{dashrule}
 \usepackage{float}
 \usepackage{subcaption}
+% \usepackage[square,sort]{natbib}
+% \usepackage{multirow}
+% \usepackage{algpseudocode}
+% \usepackage{amsmath}
+% \usepackage{geometry}
+% \usepackage{algorithmicx}
 \usepackage[hang,flushmargin]{footmisc} % no indentation for footnotes
 %\usepackage[SlantFont,BoldFont,CJKchecksingle,CJKnumber]{xeCJK}
 %\setmainfont[BoldFont=SimHei ,ItalicFont=KaiTi_GB2312]{SimKai}
@@ -96,7 +102,10 @@
 % % 参考文献,4或者小4楷体
 \addcontentsline{toc}{chapter}{参考文献}
 \begin{kai}
-  \bibliography{reference}
+	\bibliography{reference}
+  % rebiber -i reference.bib -o output.bib
+  % publisher字段直接全局替换为organization
+	% \bibliography{output}
 \end{kai}
 
 % % 附录,4或者小4楷体

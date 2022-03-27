@@ -20,45 +20,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
 Warning--empty journal in dean2004mapreduce
-You've used 100 entries,
+You've used 104 entries,
             4952 wiz_defined-function locations,
-            1527 strings with 28658 characters,
-and the built_in function-call counts, 940666 in all, are:
-= -- 16279
-> -- 111947
-< -- 140595
-+ -- 38379
-- -- 6303
-* -- 5113
-:= -- 130048
-add.period$ -- 300
-call.type$ -- 100
-change.case$ -- 197
-chr.to.int$ -- 34781
-cite$ -- 101
-duplicate$ -- 2102
-empty$ -- 6378
-format.name$ -- 3982
-if$ -- 244583
+            1545 strings with 29591 characters,
+and the built_in function-call counts, 988750 in all, are:
+= -- 17006
+> -- 117764
+< -- 147927
++ -- 40354
+- -- 6603
+* -- 5325
+:= -- 136637
+add.period$ -- 312
+call.type$ -- 104
+change.case$ -- 205
+chr.to.int$ -- 36594
+cite$ -- 105
+duplicate$ -- 2198
+empty$ -- 6654
+format.name$ -- 4166
+if$ -- 257106
 int.to.chr$ -- 4
-int.to.str$ -- 101
+int.to.str$ -- 105
 missing$ -- 0
-newline$ -- 574
-num.names$ -- 300
-pop$ -- 50064
+newline$ -- 598
+num.names$ -- 312
+pop$ -- 52757
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 104
 quote$ -- 0
-skip$ -- 98886
+skip$ -- 103925
 stack$ -- 0
-substring$ -- 42390
-swap$ -- 112
-text.length$ -- 1942
+substring$ -- 44525
+swap$ -- 118
+text.length$ -- 2034
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1184
+type$ -- 1228
 warning$ -- 1
-while$ -- 2416
+while$ -- 2524
 width$ -- 0
-write$ -- 1403
+write$ -- 1454
 (There was 1 warning)

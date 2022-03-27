@@ -22,12 +22,18 @@
 \contentsline {section}{\numberline {2.4}基于混合纠删码的数据修复技术}{24}{section.2.4}%
 \contentsline {section}{\numberline {2.5}基于预先修复的数据修复技术}{28}{section.2.5}%
 \contentsline {section}{\numberline {2.6}本章小结}{31}{section.2.6}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}面向纠删码构建的存储系统中预测修复技术研究}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}预测修复算法}{32}{section.3.1}%
-\contentsline {section}{\numberline {3.2}修复调度算法}{32}{section.3.2}%
-\contentsline {section}{\numberline {3.3}实验结果分析}{32}{section.3.3}%
-\contentsline {chapter}{参考文献}{33}{section.3.3}%
-\contentsline {chapter}{攻读学位期间的成果}{43}{chapter*.20}%
-\contentsline {chapter}{攻读学位期间的主要科研工作}{44}{chapter*.21}%
-\contentsline {chapter}{致谢}{45}{chapter*.22}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}纠删码的高可靠预先数据修复算法研究}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}引言}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}预先修复问题建模}{33}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}问题描述}{33}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}模型假设}{34}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}理论修复时间}{34}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}迁移与重建时间建模}{35}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}预先修复集合划分算法}{36}{section.3.3}%
+\contentsline {section}{\numberline {3.4}预先修复调度算法}{39}{section.3.4}%
+\contentsline {section}{\numberline {3.5}实验结果与分析}{41}{section.3.5}%
+\contentsline {chapter}{参考文献}{42}{section.3.5}%
+\contentsline {chapter}{攻读学位期间的成果}{53}{chapter*.25}%
+\contentsline {chapter}{攻读学位期间的主要科研工作}{54}{chapter*.26}%
+\contentsline {chapter}{致谢}{55}{chapter*.27}%
 \contentsfinish 

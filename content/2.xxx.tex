@@ -88,32 +88,32 @@ PT需要max(20/4，20/2.5)=8.0s，而SMFRepair只需要20/10+20/10+20/8=6.5s。
 且他们提出的多节点调度算法MSRepair可以减少多节点恢复时间33.78\%-67.53\%。
 
 \begin{figure}[tb!]
-    \centering
-    \begin{subfigure}[t]{0.4\textwidth}
-           \centering
-           \includegraphics[scale=0.25]{figures/2.3-1.pdf}
-            \caption{两个helper和一个requestor的网络模型}
-            \label{fig:2.3-1}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[scale=0.25]{figures/2.3-2.pdf}
-            \caption{PPR: helper2到helper1是低带宽链路}
-            \label{fig:2.3-2}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[scale=0.3]{figures/2.3-3.pdf}
-            \caption{PPT: 通过并行传输绕过链路瓶颈}
-            \label{fig:2.3-3}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.4\textwidth}
-            \centering
-            \includegraphics[scale=0.3]{figures/2.3-4.pdf}
-            \caption{SMFRepair: 使用空闲节点绕过链路瓶颈}
-            \label{fig:2.3-4}
-    \end{subfigure}
-    \caption{空闲节点可以绕过链路瓶颈，对于一个20MB的数据块而言，PPR、PPT和SMFRepair的修复时间分别为12.5s，8.0s，6.5s}
+	\centering
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.25]{figures/2.3-1.pdf}
+		\caption{两个helper和一个requestor的网络模型}
+		\label{fig:2.3-1}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.25]{figures/2.3-2.pdf}
+		\caption{PPR: helper2到helper1是低带宽链路}
+		\label{fig:2.3-2}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.3]{figures/2.3-3.pdf}
+		\caption{PPT: 通过并行传输绕过链路瓶颈}
+		\label{fig:2.3-3}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[scale=0.3]{figures/2.3-4.pdf}
+		\caption{SMFRepair: 使用空闲节点绕过链路瓶颈}
+		\label{fig:2.3-4}
+	\end{subfigure}
+	\caption{空闲节点可以绕过链路瓶颈，对于一个20MB的数据块而言，PPR、PPT和SMFRepair的修复时间分别为12.5s，8.0s，6.5s}
 	\label{fig:2.3}
 \end{figure}
 针对快速修复技术，还有的研究聚焦于改善数据放置技术以提高修复速度。\citet{liu2020esetstore}提出了一种数据放置算法ESet来改善恢复性能，
@@ -162,7 +162,7 @@ $o_{i, 1} \in \mathcal{U}, o_{i, 2} \in \mathcal{U}, \ldots, o_{i, n_{i}} \in \m
 所有的$k$个块传输应该在$d_i$之间完成，即时间限制约束条件为：
 \begin{equation}
 	\label{eq:2-2}
-    \sum_{t=s_{i}}^{d_{i}} x_{t, i, j} y_{i, j} \geq v_{i}, \text { if } z_{i}=1, \forall i, \forall j
+	\sum_{t=s_{i}}^{d_{i}} x_{t, i, j} y_{i, j} \geq v_{i}, \text { if } z_{i}=1, \forall i, \forall j
 \end{equation}
 
 由于每个传输头尾对都有一个预先确定的路线，对于一个给定的任务集，用$RC_g$来表示跨越一个TOR或者聚合交换机$g$的任务或者
@@ -171,27 +171,27 @@ TOR交换机有着容量的限制$CTA$且每个节点有着容量限制$CST$，�
 
 \begin{equation}
 	\label{eq:2-3}
-    \sum_{(i, j) \in R C_{g}} x_{t, i, j} y_{i, j} \leq C T A, \forall g, t
+	\sum_{(i, j) \in R C_{g}} x_{t, i, j} y_{i, j} \leq C T A, \forall g, t
 \end{equation}
 
 
 \begin{equation}
 	\label{eq:2-4}
-    \sum_{(i, j) \in S C_{h}} x_{t, i, j} y_{i, j} \leq C S T, \forall h, t
+	\sum_{(i, j) \in S C_{h}} x_{t, i, j} y_{i, j} \leq C S T, \forall h, t
 \end{equation}
 
 任务的目标就是要在基于纠删码的存储系统中最大化在时间截止内成功完成的修复任务数。可以看做是一个联合调度和优化问题：
 
 \begin{equation}
-    \begin{aligned}
-    \label{eq:2-5}
-    \max \quad & \sum_{i} z_{i}  \\
-    \mbox{s.t.} \quad & \sum_{j} y_{i, j}=k_{i}, \forall i \\
-    & \sum_{t=s_{i}}^{d_{i}} x_{t, i, j} y_{i, j} \geq v_{i} z_{i}, \forall i \\
-    & \sum_{(i, j) \in R C_{g}} x_{t, i, j} y_{i, j} \leq C T A, \forall g, t \\
-    & \sum_{(i, j) \in S C_{h}} x_{t, i, j} y_{i, j} \leq C S T, \forall h, t \\
-    \mbox{var.} \quad & x_{t, i, j} \geq 0, y_{i, j} \in\{0,1\}, z_{i} \in\{0,1\}
-    \end{aligned}
+	\begin{aligned}
+		\label{eq:2-5}
+		\max \quad        & \sum_{i} z_{i}                                                          \\
+		\mbox{s.t.} \quad & \sum_{j} y_{i, j}=k_{i}, \forall i                                      \\
+		                  & \sum_{t=s_{i}}^{d_{i}} x_{t, i, j} y_{i, j} \geq v_{i} z_{i}, \forall i \\
+		                  & \sum_{(i, j) \in R C_{g}} x_{t, i, j} y_{i, j} \leq C T A, \forall g, t \\
+		                  & \sum_{(i, j) \in S C_{h}} x_{t, i, j} y_{i, j} \leq C S T, \forall h, t \\
+		\mbox{var.} \quad & x_{t, i, j} \geq 0, y_{i, j} \in\{0,1\}, z_{i} \in\{0,1\}
+	\end{aligned}
 \end{equation}
 
 其中式~\ref{eq:2-5}的第三行正好对应式~\ref{eq:2-2}任务成功时，即$z_i=1$。
@@ -308,30 +308,30 @@ Regeneration）码结合到一起，其中RS码具有较低的
 有很大的优势，该技术将修复应用的速度提升了0.77倍，且修复时间降低了69.10\%。该方案包含三个主要特征：
 
 \begin{enumerate}
-    \item Code选择的调整，EC-Fusion将热数据划分
-            为读取密集和写入密集型数据，然后又对数
-            据的高低丢失风险做了相应的划分。冷数据
-            或低风险数据采用RS进行编码，这保持了较
-            高的存储效率，而且保证了良好的应用性能，
-            特别是对于写入密集型I/O任务而言。对于
-            具有高失效风险的读取密集数据，采取MSR
-            编码可以节省大量的修复流量带宽，对应用
-            程序的I/O产生很少的负面影响。
-    \item 适应性规则，EC-Fusion采取现有的缓存算法
-            （如LRU、LFU等）来识别热数据或冷数据。
-            在EC-Fusion中，两个队列分别用于访问模
-            式和故障特征，并且现有的缓存算法可以应
-            用于这些队列中。其采用两个队列，第一个队
-            列中的每个块包含了块ID、缓存命中次数，
-            第二个队列的每个块包含块ID、缓存命中次
-            数和编码方案的标志。
-    \item Code的切换，在数据的属性保持动态变化的
-            时候，如从热数据转换到了冷数据，高丢失
-            风险数据变成了低风险数据。因为其本身数
-            据保存时选择的编码方式不同，故相应的编
-            码方式也要随着数据属性的变化而变化。即
-            RS和MRS可以互相转换，其中MSR转
-            RS如图~\ref{fig:con-2.7}所示。
+	\item Code选择的调整，EC-Fusion将热数据划分
+	      为读取密集和写入密集型数据，然后又对数
+	      据的高低丢失风险做了相应的划分。冷数据
+	      或低风险数据采用RS进行编码，这保持了较
+	      高的存储效率，而且保证了良好的应用性能，
+	      特别是对于写入密集型I/O任务而言。对于
+	      具有高失效风险的读取密集数据，采取MSR
+	      编码可以节省大量的修复流量带宽，对应用
+	      程序的I/O产生很少的负面影响。
+	\item 适应性规则，EC-Fusion采取现有的缓存算法
+	      （如LRU、LFU等）来识别热数据或冷数据。
+	      在EC-Fusion中，两个队列分别用于访问模
+	      式和故障特征，并且现有的缓存算法可以应
+	      用于这些队列中。其采用两个队列，第一个队
+	      列中的每个块包含了块ID、缓存命中次数，
+	      第二个队列的每个块包含块ID、缓存命中次
+	      数和编码方案的标志。
+	\item Code的切换，在数据的属性保持动态变化的
+	      时候，如从热数据转换到了冷数据，高丢失
+	      风险数据变成了低风险数据。因为其本身数
+	      据保存时选择的编码方式不同，故相应的编
+	      码方式也要随着数据属性的变化而变化。即
+	      RS和MRS可以互相转换，其中MSR转
+	      RS如图~\ref{fig:con-2.7}所示。
 \end{enumerate}
 
 \begin{figure}[htbp]
@@ -397,10 +397,10 @@ Reconstruction Code）来存储热数据 ， 用HH码
 	\centering
 	\includegraphics [scale=0.2]{figures/2.5.pdf}
 	\caption{在POST的架构设计中，
-    当带有特征的暖数据来自3倍复制的存储系统时，
-    集群会通过K-Prototype算法将数据存储到基于纠删码的存储系统中，
-    当用户在访问数据出现节点故障时，推荐系统会根据用户设置提供推荐列表，
-    并为存储系统中的每个条带提供重建列表}
+		当带有特征的暖数据来自3倍复制的存储系统时，
+		集群会通过K-Prototype算法将数据存储到基于纠删码的存储系统中，
+		当用户在访问数据出现节点故障时，推荐系统会根据用户设置提供推荐列表，
+		并为存储系统中的每个条带提供重建列表}
 	\label{fig:con-2.5}
 \end{figure}
 

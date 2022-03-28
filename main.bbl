@@ -1,4 +1,4 @@
-\begin{thebibliography}{104}
+\begin{thebibliography}{105}
 \providecommand{\biband}{和}
 \providecommand{\bibetal}{等}
 \providecommand{\natexlab}[1]{#1}
@@ -753,5 +753,12 @@ Rashmi~K~V, Shah~N~B, Gu~D, Kuang~H, Borthakur~D, Ramchandran~K.
   cluster [C]//\allowbreak
 5th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 13).
 \newblock 2013.
+
+\bibitem[Zhang {\bibetal}(2019)Zhang, Han, and Lee]{zhang2019simedc}
+Zhang~M, Han~S, Lee~P~P.
+\newblock Simedc: A simulator for the reliability analysis of erasure-coded
+  data centers [J].
+\newblock IEEE Transactions on Parallel and Distributed Systems, 2019,
+  30\penalty0 (12): 2836-2848.
 
 \end{thebibliography}

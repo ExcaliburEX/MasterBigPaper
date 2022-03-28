@@ -1,0 +1,35 @@
+\begin{algorithm}[htpb]
+	\begin{algorithmic}[1]
+		% \newlength{\commentindent}
+		\setlength{\commentindent}{.3\textwidth}
+		\setlength{\algorithmicindent}{1.5em}
+		\renewcommand{\algorithmiccomment}[1]{\unskip\hfill\makebox[\commentindent][l]{$\rhd$~#1}\par}
+		\LetLtxMacro{\oldalgorithmic}{\algorithmic}
+		\renewcommand{\algorithmic}[1][0]{
+			\oldalgorithmic[#1]
+			\renewcommand{\ALC@com}[1]{
+				\IFnum\pdfstrcmp{##1}{default}=0\ELSE\algorithmiccomment{##1}\fi}%
+		}
+		\REQUIRE{$\textbf{w}={(w_1,w_2,...)}$,type}
+		\ENSURE{$\textbf{NewW}$}
+		\STATE $\textbf{NewW} = \textbf{w}$;
+		\WHILE {true}
+		\STATE R = FindMaxTimeRoad($\textbf{NewW}$);
+		\IF {type == 1}
+		\STATE S = FindNodeWithoutChunk($\textbf{NewW}$);
+		\STATE D = R.Destination;
+		\ELSE
+		\STATE S, D = R.Source, R.Destination;
+		\ENDIF
+		\STATE RIdle = GetIdleNode(R);
+		\STATE NewR = DijkstraMinTimeRoad(S, D, RIdle);
+		\STATE Update($\textbf{NewW}$, NewR);
+		\IF {FindMaxTimeRoad($\textbf{NewW}$) == R}
+		\STATE break;
+		\ENDIF
+		\ENDWHILE
+		\STATE $\textbf{return}$ $\textbf{NewW}$;
+	\end{algorithmic}
+	\caption{Improved SMFRepair Algorithm}
+	\label{alg:3-2}
+\end{algorithm}

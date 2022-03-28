@@ -41,11 +41,18 @@
 
 \subsection{问题描述}
 
-以$RS(5,3)$为例，其中$n=5$和$k=3$，设$N_i$为第$i$个可用节点， 
+以$RS(5,3)$为例，其中$n=5$和$k=3$，设$N_i$为第$i$个可用节点，
 $S_i$是要修复的STF节点的第$i$个块的条带。假设现在得到了一个STF节点的$c_m$和$c_r$的集合，
 其中$c_m$为迁移的块的个数，$c_r$为重建的块的个数。如图~\ref{fig:3.2}所示的存储集群，总共有$M=7$个节点，其中$M-1=6$个可用节点，
 $N_1,N_2,\cdots,N_6$，而STF节点的块对应于条带$S_1,S_2,S_3$。
 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics [scale=0.5]{figures/3.2.pdf}
+	\caption{RS(5,3)的条带分布}
+	\label{fig:3.2}
+\end{figure}
 
 \citet{shen2019fast}提出，对于这样的通常情况需要解决两个基本问题，
 其一是在给定的通过重建修复的STF节点的$c_r$块中，
@@ -62,7 +69,7 @@ $N_1,N_2,\cdots,N_6$，而STF节点的块对应于条带$S_1,S_2,S_3$。
 在快速变化的网络环境中，可用节点并行地处理修复任务与迁移任务，不同节点的带宽瓶颈不同，
 如果在修复过程中随机选择迁移或者重建方法，势必会造成整个网络修复性能得不到充分利用，
 或者某个节点超出负荷的运行而剩下的节点却处于空闲状态，
-需要设计一个算法充分利用整个网络的带宽进行重建与迁移，其中至关重要的就是对于一个STF节点确认其重建集$c_m$与迁移集$c_r$。 
+需要设计一个算法充分利用整个网络的带宽进行重建与迁移，其中至关重要的就是对于一个STF节点确认其重建集$c_m$与迁移集$c_r$。
 
 问题转化为计算出$c_m$和$c_r$的集合，亦即确定重建集和迁移集的具体块。
 有如下具体问题，若一个STF节点拥有$m+r$个数据块，每个块对应的文件有着相应的访问热度$T_i(1\leqslant n \leqslant m+r)$，
@@ -115,7 +122,7 @@ $t_m$为将一个块从STF节点迁移到另一个正常节点的时间，因此
 写入时间为$\frac{c}{b_d}$，则$t_m$有：
 \begin{equation}
 	\label{eq:3-4}
-    t_{m}=\frac{2c}{b_{d}}+\frac{c}{b_{n}}
+	t_{m}=\frac{2c}{b_{d}}+\frac{c}{b_{n}}
 \end{equation}
 
 对于重建任务，$k$个正常节点可以并行地读取同一条带的块，故对每一个待读取块的读取时间为$\frac{c}{b_d}$。因为接收$k$个块的节点一个时间步只能接收一个块，
@@ -123,7 +130,7 @@ $t_m$为将一个块从STF节点迁移到另一个正常节点的时间，因此
 时间为$\frac{c}{b_d}$，因此$t_r$有：
 \begin{equation}
 	\label{eq:3-5}
-    t_{r}=\frac{2c}{b_{d}}+\frac{k \cdot c}{b_{n}}
+	t_{r}=\frac{2c}{b_{d}}+\frac{k \cdot c}{b_{n}}
 \end{equation}
 
 设$M=100$，$U=1,000$，块大小$c=64MB$，$b_d=100MB/s$，且$b_n=1Gb/s$。考虑$RS(9,6)$，$RS(14,10)$，$RS(16,12)$三种分布式存储系统中的
@@ -169,9 +176,16 @@ $t_m$为将一个块从STF节点迁移到另一个正常节点的时间，因此
 在一个修复轮次中完成修复任务。
 所以为了提高并行性，应该最大化重建集的块数量，如章节~\ref{subsection3.1}所说，最大为$\frac{M-1}{k}$。
 
-本文针对重建集与迁移集问题，设计了划分迁移集与重建集算法SMSRS（Split Migration Set And Reconstruction Set）算法，如算法\ref{alg:3-1}所示。
+如图~\ref{fig:3.3}所示，本文针对重建集与迁移集问题，设计了划分迁移集与重建集算法SMSRS（Split Migration Set And Reconstruction Set）算法，如算法\ref{alg:3-1}所示。
 该算法主要使用数据热度队列与最小堆技术，根据数据访问热度高低处理待修复的块的出队修复顺序，
 利用最小堆不断优化当前出堆的网络带宽性能最优的可用节点进行迁移修复，然后通过贪心策略确定最佳的重建节点以及对应的重建块接收节点。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics [scale=0.9]{figures/3.3.pdf}
+	\caption{重建与迁移修复流程}
+	\label{fig:3.3}
+\end{figure}
 
 在获得迁移集$c_m$和重建集$c_r$中，需要先根据文件访问热度对相应文件的数据块进行排序送入队列$Q$（第1$\sim$2行），
 按照热度从高到低的顺序从队列$Q$中弹出STF节点中待修复的块，
@@ -184,15 +198,7 @@ $t_m$为将一个块从STF节点迁移到另一个正常节点的时间，因此
 并在可用节点集中找出与这$r$个节点连接带宽值最大的节点$RNode$，
 然后得出$r$个节点中与$RNode$连接最慢的节点除以块大小即得出对应的通过重建块修复所耗费的时间$t_r$（第17$\sim$30行）。
 最后通过判断$t_r$和$t_m$的大小来确定重建集和迁移集，当队列$Q$为空时，则结束整个算法，返回相应的迁移集$c_m$和重建集$c_r$（第31行$\sim$39行）。
-如图~\ref{fig:3.3}所示，展示了相应的流程。
 
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics [scale=0.7]{figures/3.3.pdf}
-	\caption{重建与迁移修复流程}
-	\label{fig:3.3}
-\end{figure}
 
 
 \input{algorithm/A1.tex}
@@ -210,14 +216,15 @@ $t_m$为将一个块从STF节点迁移到另一个正常节点的时间，因此
 $(2+5+3+2)/4=3MB/s$。可以计算出所有$M-1$个节点的平均带宽，并选择平均带宽最大的$k$个节点作为$helper$节点。平均带宽
 可以更直观地显示节点的传输数据的能力，平均带宽越大，那么低带宽的情况就会相对少见。
 
-\begin{figure}[htbp]
+\begin{figure}[tb!]
 	\centering
 	\includegraphics [scale=0.9]{figures/3.4.pdf}
 	\caption{$helper$节点选择和链路选择过程图}
 	\label{fig:3.4}
 \end{figure}
 
-\input{tables/T1.tex}
+
+
 在这个单节点修复的多级传输问题中，需要确定三个基本要素，即$helper$节点，链路选择和传输方向确定。在图~\ref{fig:3.3}中，
 故障节点$N_f$中有块$D_1$，其中块的大小为$20MB$。当$D_1$丢失时，平均带宽最大的$k(k=3)$个正常节点为$D_3,P_1,D_2$，故$helper$
 节点确定。在时间步1中，通过排列组合有三种修复方案，其中第三个方案的最低的链路在三个方案的最低中最大，因此时间步1的链路选择方案确定，
@@ -225,8 +232,17 @@ $(2+5+3+2)/4=3MB/s$。可以计算出所有$M-1$个节点的平均带宽，并�
 若选择了$D_3\rightarrow D_2$，那么在低链路带宽就会留到时间步2，相较而言造成的影响更大。当故障节点接收到块之后，
 就可以通过解码参数来计算丢失的$D_1$，也就是$D_1=xD_2+yD_3+zP_1$。虽然在传递过程中，已经
 通过绕过低链路和提高并行速度的方式来进行，但是带宽瓶颈的问题依然存在，并没有达到实时带宽的最优。
-
-通过加入空闲节点（idle nodes）进行数据中继的方式可以对传输问题进一步优化。
+\input{tables/T1.tex}
+通过加入空闲节点（idle nodes）进行数据中继的方式可以对传输问题进一步优化。如图~\ref{fig:3.5}所示，空闲节点中不包含
+同一条带中的数据块或者包含其他条带的数据块，在修复过程中处于空闲状态，没有进行其他修复任务的传输。可以看出通过空闲节点的中继，
+有效减少了传输时间，原本的$P_1\rightarrow D_1$需要$5s$，然而通过$I_1$进行中继后的$P_1\rightarrow I_1 \rightarrow D_1$
+只需要$4s$。为了简化问题，假设每个空闲节点同时只能执行一种转发任务，在多级转发过程中，需要源头节点和目标节点以及中继节点集合，问题
+的目标是找到一条消耗时间最短的链路路径，例如图~\ref{fig:3.5}中的$P_1,D_1$和$I_1,I_2$组成的集合，且这样的组合路径可以用树来进行表示。
+$P_1$节点则为树根，$D_1$为叶子节点，空闲节点的集合则可以表示为非叶节点，其中任何一条从树根到叶子节点的路径则为一条转发链路，假设
+共有$x$个非叶节点，则一共有$C_{x}^{1}+C_{x}^{2}+\cdots+C_{x}^{x}$种转发链路的可能。当$x$变得很大的时候，寻找路径的算法复杂度将会
+非常高。针对此问题\citet{zhou2022bandwidth}提出了可以绕过低带宽的链路，
+更快地将数据传输到目标节点.故而提出了带宽感知的多级调度算法SMFRepair
+（single-node multi-level forwarding repair algorithm）。
 
 \begin{figure}[htbp]
 	\centering
@@ -235,5 +251,180 @@ $(2+5+3+2)/4=3MB/s$。可以计算出所有$M-1$个节点的平均带宽，并�
 	\label{fig:3.5}
 \end{figure}
 
-\section{实验结果与分析}
+SMFRepair不仅可以运用在重建技术上，本文在该算法的基础上将其运用到了迁移技术上并进行了改善。
+该算法基于PPR技术，改善了PPR容易受到异构环境中低链路带宽的影响，提高每轮修复的效率，从而在整个修复过程中达到最优。
+图~\ref{fig:3.6}显示了具体的优化过程，假设每个节点只能协助转发一次（避免性能瓶颈和逆向转发），
+整个转发过程包括两个节点和一个集合。在重建任务中两个节点是源节点$N_1$和目标节点$N_2$，
+闲置节点则是含有相同条带的其他块的节点的集合，称之为转发中间节点集。
+在迁移任务中，两个节点的源节点为STF节点，目标节点为不含有相同条带的其他块的节点，例如$N_2$，
+闲置节点则为所有可用节点，定义为迁移任务的中间集。
+优化的目标就是找到一条从源节点出发，经过中间集，到达目标节点的最短路径。
+其中，从源节点到中间集以及中间集到目标节点的链接是单向的，中间集中的每个节点都是双向互通的，但每个节点只能通过一次。
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics [scale=0.5]{figures/3.6.pdf}
+	\caption{重建与迁移的中继传输}
+	\label{fig:3.6}
+\end{figure}
+
+对于纠删码结构为$RS(n,k)$的分布式存储集群来说，当某个节点失效，相应的数据块不可访问时，对于重建任务而言，一般情况下需要在剩下
+的$M-1$个节点中检索$k$个从属于同一个条带的数据进行数据修复，通常会有两种情况（结合图~\ref{fig:3.6}进行阐述）：
+
+\begin{enumerate}
+	\item 从节点$N_1$检索到一个块，从其传输到节点
+	      $N_3$，同时节点$N_3$也含有相应的从属于同一个条带的数据块，此时节点$N_3$含有两个可以传输的同一个条带的数据块，将其传输到节点
+	      $N_2$进行修复，总共花费的时间为$t_1+t_2$，小于直接从节点$N_1$传输数据到节点$N_2$所花费的时间$t_3$；
+	\item 从节点$N_1$
+	      检索到一个块，从其传输到节点$N_4$，同时节点$N_4$并不含有相应的从属于同一个条带的数据块，可能含有其他数据块或者没有，然后从节点
+	      $N_4$将数据块转发到节点$N_3$，之后的流程与情况（1）相同，而花费的总时间为$t_4+t_5+t_2<t_1+t_2$，即$t_4+t_5<t_1$，
+	      在这种情况下，在两个均含有相同条带的数据块的节点传输数据的速度慢于先将数据块传输到空节点（或者含有其他条带的数据块）
+	      再转发到另一个含有相同条带的数据块的节点的速度。
+	      对于迁移任务而言，一般只有一种情况需要考虑：当有STF节点产生时，则需要将数据块迁移到不存放该条带下数据块的节点$N_2$，
+	      首先将其传输到已经含有相同条带下数据块的节点$N_3$，然后再从节点$N_3$将数据块转发设计的目标节点$N_2$，所消耗的总时间为
+	      $t_1+t_2$，且小于直接将数据块从STF节点传输到目标节点$N_2$的时间$t_3$。
+\end{enumerate}
+
+针对上述情况的特点，节点传输过程主要通过类似最短路的机制来减少整个修复所消耗的时间。
+可以通过计算最短路径的Dijkstra算法（O(NLogN)）求得最优的转发修复方案。如图~\ref{fig:3.7}所示，
+主要是通过建立一个图结构来描述问题，图的源节点为$N_1$或$N_2$，
+对于重建任务需要从含有该块的节点出发，则源节点为$N_1$，
+对于迁移任务需要从STF节点出发，经过若干次跳跃，最终节点一定是未包含该条带的节点，所以源节点是$N_2$。
+从源节点开始，逐个计算每条路径消耗的权重时间，可以通过剪枝来加快算法的运行，
+即对于某些情况下，路径消耗一定是大于当前已经遍历的情况，则在算法运行中不纳入考虑。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics [scale=0.5]{figures/3.7.pdf}
+	\caption{节点中继的流程}
+	\label{fig:3.7}
+\end{figure}
+
+
+因此本文针对迁移与重建问题的调度特性，设计了改进的SMFRepair算法（IBA，Improved SMFRepair Algorithm）算法。
+原算法在修复过程中总是构建当前带宽的全局最优路径，使用的是树的搜索算法，
+由于本文需要解决的是重建与迁移交融的修复任务，所以在寻找最优路径的过程中使用的是Dijkstra算法。
+IBA在每一轮修复中首先判断该任务是迁移还是重建，根据输入参数type进行确认，紧接着采用局部最优修复（第4$\sim$11行），
+在此过程中链路带宽不断发生变化，从而实现最优化。详细算法如算法~\ref{alg:3-2}所示，具体效果将在随后的实验中展现。
+
+
+\input{algorithm/A2.tex}
+
+\section{实验结果与分析}
+我们对SMSRS和ISA算法进行了仿真实验，以评估其在大规模存储集群中的性能。
+基于SimEDC\cite{zhang2019simedc}我们为算法原型为设计了一个仿真平台。
+SimEDC是一个用于模拟离散事件程序集，
+其主要功能是用来特征量化基于纠删码构建的数据中心的可靠性。
+它旨在通过接收多种影响因子的输入，包括数据中心拓扑，纠删码（例如，经典的Reed-Solomon码，以及最近提出的LRC和DRC），
+数据的冗余放置（即单节点单块数据和单节点多块数据），以及数学统计模型或系统历史运行数据的不同子系统的故障或者修复模式，
+同时可以量化基于纠删码构建的数据中心的持久性和可靠性的量化指标。
+此外，它可以采用重要性采样来加速整个仿真模拟的过程，从而能够对基于纠删码构建的数据中心的可靠性进行全面的仿真模拟分析。
+在我们的仿真平台中，没有实现编码操作，因为主要是将本文算法原型与FastPR和SMFRepair进行性能比较。
+
+\subsection{实验环境}
+实验环境是在虚拟机中配置的Ubuntu 16.04 LTS系统，配置为3.70GHz Intel Core i5-9600K处理器，16GB内存，1 Gbit/s网络接口。
+在该系统中通仿真平台搭建了分布式存储系统集群，集群包含100个节点，磁盘带宽上限$b_d=100MB/s$，网络带宽上限$b_n=1Gb/s$，3个空闲节点（只用于转发）。
+我们用$RS(6,4)$，$RS(9,6)$\cite{ovsiannikov2013quantcast}（QFS采用的编码策略），
+$RS(14,10)$\cite{muralidhar2014f4}（Facebook采用的编码策略），$RS(16,12)$\cite{huang2012erasure}（Azure采用的编码策略）四种
+RS码进行对比实验。其中将块大小固定为$64MB$和$128$MB两种情况，并在存储集群中随机分布$1,000$个条带的块，测试结果采用运行50次以上的平均结果。
+
+
+
+
+\subsection{修复与调度实验}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{figures/3-8.pdf}
+		\caption{总节点数$M$值理论结果}
+		\label{fig:3-8}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/3-9.pdf}
+		\caption{$RS(n,k)$配置理论结果}
+		\label{fig:3-9}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/3-10.pdf}
+		\caption{磁盘带宽$b_d$理论结果}
+		\label{fig:3-10}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/3-11.pdf}
+		\caption{网络带宽$b_n$理论结果}
+		\label{fig:3-11}
+	\end{subfigure}
+	\caption{预测修复与反应式修复建模对比}
+	\label{fig:3-8-11}
+\end{figure}
+
+
+\subsection{条带数的影响}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{figures/3-12.pdf}
+		\caption{总节点数$M$值理论结果}
+		\label{fig:3-12}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1.1\linewidth]{figures/3-14.pdf}
+		\caption{$RS(n,k)$配置理论结果}
+		\label{fig:3-14}
+	\end{subfigure}
+	\caption{预测修复与反应式修复建模对比}
+	\label{fig:3-12-14}
+\end{figure}
+
+\subsection{空闲节点数的影响}
+
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figures/3-15.pdf}
+		\caption{总节点数$M$值理论结果}
+		\label{fig:3-15}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figures/3-16.pdf}
+		\caption{$RS(n,k)$配置理论结果}
+		\label{fig:3-16}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figures/3-17.pdf}
+		\caption{磁盘带宽$b_d$理论结果}
+		\label{fig:3-17}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.4\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figures/3-18.pdf}
+		\caption{网络带宽$b_n$理论结果}
+		\label{fig:3-18}
+	\end{subfigure}
+	\caption{预测修复与反应式修复建模对比}
+	\label{fig:3-15-18}
+\end{figure}
+
+
+
+
+\subsection{带宽变化影响}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics [scale=0.25]{figures/3-19.pdf}
+	\caption{节点中继的流程}
+	\label{fig:3-19}
+\end{figure}

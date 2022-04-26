@@ -1,27 +1,55 @@
 % !Mode:: "TeX:UTF-8"
 
 \begin{eabstract}
-	Syntactic parsing is one of the most important intermediate processes in sentence comprehension,
-	and probability estimation has always been a core problem in the parsing field.
-	However, in either deep learning (DL) era or pre-DL era, there exist very few works based on global probabilistic modeling, mainly due to the high complexity of tree-structure CRF (TreeCRF) inference.
-	This thesis proposes to apply TreeCRF to both dependency parsing and constituency parsing.
-	The key idea to solve the inefficiency issue is to batchify the inference algorithm for tree structures, and meanwhile avoid the complex Outside algorithm via back-propagation.
-	Currently, parsing models are greatly simplified, and it's a trend to adopt local loss for syntactic parsing.
-	In contrast, we propose a high-order extension to first-order models.
-	While high-order modeling further increases the algorithm complexity, we also try to apply mean field variational inference (MFVI) as an alternative to exact inference of TreeCRF method, which greatly improves the parsing efficiency.
+	Distributed storage systems are widely used in the era of big data as a service that can store 
+	large amounts of data and provide convenient data access, but data loss occurs due to the large system, 
+	and the system generally uses the erasure code for data storage and redundancy. However, 
+	there are problems such as high computational overhead of data repair, high network load and low repair speed. 
+	In this paper, we address the above problems and conduct an in-depth study on the pre-repair and hybrid erasure code repair techniques for erasure codes.
+	The main research and contributions are as follows:
+
+	(1) In order to address the problem of slow repair speed of erasure codes which leads to the reduction of system reliability, 
+	this paper improves the pre-repair algorithm to adapt to the fast changing network environment based on the pre-repair and migration 
+	repair, proposes the division of migration set and reconstruction set algorithm SMSRS, and introduces the concept of multi-stage 
+	relay transmission and proposes an improved multi-stage transmission scheduling algorithm ISA to speed up the transmission of 
+	repair task data. The experimental results show that the proposed partitioning algorithm and scheduling technique reduce the repair time by 
+	7.2\%$\sim$13.2\% compared with the traditional method.
+
+	(2) To address the degraded read-high latency problem of traditional single-code repair technology, 
+	this paper proposes a load dynamic adaptive hybrid censored data repair technology that can 
+	sense data heat based on the traditional hybrid censored LRC\&HH codes. The technique defines 
+	the read/write load mode and repair load mode according to the I/O characteristics of the 
+	actual storage system, proposes a load adaptive strategy by modeling and analyzing the code 
+	allocation rules and dynamic queueing algorithm to divide hot and cold data, and combines the 
+	code switching algorithm to improve the system data repair speed. The experimental results show 
+	that the proposed load adaptive strategy reduces the repair time by 6.8\%$\sim$18.7\% compared with the existing LRC\&HH code random switching strategy.
+
+	(3) Based on the above theoretical research results, 
+	a prototype system of fault-tolerant storage based on hybrid censoring codes is designed 
+	and implemented. The system contains multiple hybrid censoring schemes, including HACFS, 
+	EC-Fusion and LRC\&HH, and supports the corresponding extension interfaces and the fusion 
+	of reconstruction and migration in repair scheduling. The system includes the following modules: 
+	storage center architecture, node failure model, hybrid code correction policy, node placement policy, reliability metrics, and event
+	processing model. The system can accept parameters containing storage center architecture, hybrid coding strategy and redundancy settings, 
+	and can quantitatively analyze the reliability quantifiers among various coding schemes. 
+	The experimental results show that the hybrid pre-repair-based censoring scheme can improve the system reliability 
+	compared with the traditional single censoring scheme, in which the PDL parameters are reduced by 30\%$\sim$35\%, NOMDL by 40\%$\sim$42.5\%, and BR by 35.6\%$\sim$37.8\%.
+
 
 	\vskip 21bp
 	\noindent
 	{\bf\zihao{-4} Key words: }
-	Syntactic Parsing,
-	Dependency Parsing,
-	Constituency Parsing,
-	TreeCRF,
-	Variational Inference
+	Distributed Storage,
+	Predictive repair,
+	Mixed erasure Code,
+	Data repair
 \end{eabstract}
 
 \begin{flushright}
 	Written by Dongdong Ye
 	
 	Supervised by Zhaohui Zheng
+	% Written by ***
+	
+	% Supervised by ***
 \end{flushright}

@@ -5,40 +5,73 @@
 \contentsline {subsection}{\numberline {1.2.2}数据容错机制}{3}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}纠删码概述}{5}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Reed-Solomon码}{6}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}基于阵列结构的纠删码}{8}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}基于网络编码的纠删码}{10}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}基于分组结构的纠删码}{11}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}基于纠删码的数据修复技术}{12}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}基于星型拓扑的数据修复}{13}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}基于树型拓扑的数据修复}{14}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}基于XOR的纠删码数据修复}{15}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}纠删码及修复技术的问题和挑战}{16}{section.1.5}%
-\contentsline {section}{\numberline {1.6}论文主要研究内容}{16}{section.1.6}%
-\contentsline {section}{\numberline {1.7}论文组织结构}{16}{section.1.7}%
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}相关研究}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}基于编码结构优化的数据修复技术}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}基于调度优化的数据修复技术}{19}{section.2.2}%
-\contentsline {section}{\numberline {2.3}基于带宽优化的数据修复技术}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}基于混合纠删码的数据修复技术}{24}{section.2.4}%
-\contentsline {section}{\numberline {2.5}基于预先修复的数据修复技术}{28}{section.2.5}%
-\contentsline {section}{\numberline {2.6}本章小结}{31}{section.2.6}%
-\contentsline {chapter}{\numberline {第三章\hspace {.3em}}纠删码的高可靠预先数据修复算法研究}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}引言}{32}{section.3.1}%
-\contentsline {section}{\numberline {3.2}预先修复问题建模}{33}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}问题描述}{33}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}模型假设}{34}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}理论修复时间}{35}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}迁移与重建时间建模}{35}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}预先修复集合划分算法}{37}{section.3.3}%
-\contentsline {section}{\numberline {3.4}预先修复调度算法}{38}{section.3.4}%
-\contentsline {section}{\numberline {3.5}实验结果与分析}{44}{section.3.5}%
+\contentsline {subsection}{\numberline {1.3.2}基于阵列结构的纠删码}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}基于网络编码的纠删码}{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}基于分组结构的纠删码}{10}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}基于纠删码的数据修复技术}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}基于星型拓扑的数据修复}{12}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}基于树型修复拓扑的数据修复}{13}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}基于XOR的纠删码数据修复}{14}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}论文主要研究内容}{14}{section.1.5}%
+\contentsline {section}{\numberline {1.6}论文组织结构}{16}{section.1.6}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}相关研究}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}基于编码结构优化的数据修复技术}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}基于调度优化的数据修复技术}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}基于带宽优化的数据修复技术}{22}{section.2.3}%
+\contentsline {section}{\numberline {2.4}基于混合纠删码的数据修复技术}{26}{section.2.4}%
+\contentsline {section}{\numberline {2.5}基于预先修复的数据修复技术}{30}{section.2.5}%
+\contentsline {section}{\numberline {2.6}本章小结}{32}{section.2.6}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}基于预先重建迁移的数据修复技术研究}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}引言}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}预先修复问题建模}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}问题描述}{34}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}模型假设}{35}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}理论修复时间}{36}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}迁移与重建时间建模}{36}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}预先修复集合划分算法}{38}{section.3.3}%
+\contentsline {section}{\numberline {3.4}预先修复调度算法}{39}{section.3.4}%
+\contentsline {section}{\numberline {3.5}实验结果与分析}{45}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}实验环境}{45}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}修复与调度实验}{47}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}条带数的影响}{47}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}空闲节点数的影响}{47}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}带宽变化影响}{47}{subsection.3.5.5}%
-\contentsline {chapter}{参考文献}{49}{figure.caption.30}%
-\contentsline {chapter}{攻读学位期间的成果}{60}{chapter*.32}%
-\contentsline {chapter}{攻读学位期间的主要科研工作}{61}{chapter*.33}%
-\contentsline {chapter}{致谢}{62}{chapter*.34}%
+\contentsline {subsection}{\numberline {3.5.2}修复与调度实验}{46}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}条带数和块大小的影响}{48}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}空闲节点数的影响}{48}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}带宽变化影响}{49}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}本章小结}{50}{section.3.6}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}基于混合纠删码的数据修复技术研究}{52}{chapter.4}%
+\contentsline {section}{\numberline {4.1}引言}{52}{section.4.1}%
+\contentsline {section}{\numberline {4.2}编码策略选择}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}局部修复码（LRC）}{53}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Hitchhiker（HH）码}{54}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}负载自适应策略}{54}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}编码分配规则}{55}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}自适应选择算法}{59}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}编码切换算法}{61}{section.4.4}%
+\contentsline {section}{\numberline {4.5}实验结果与分析}{63}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}实验参数与数据集}{63}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}读写负载性能实验结果}{64}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}修复负载性能结果}{65}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}整体负载性能实验结果}{66}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}临界比实验结果}{67}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}本章小结}{67}{section.4.6}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}基于混合纠删码的容错存储原型系统设计与实现}{68}{chapter.5}%
+\contentsline {section}{\numberline {5.1}系统设计}{68}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}存储中心架构}{69}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}故障模式建模}{70}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}纠删码混合策略}{71}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}纠删码接口}{71}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}可靠性分析指标}{72}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}事件处理}{73}{subsection.5.1.6}%
+\contentsline {section}{\numberline {5.2}实验结果与分析}{75}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}实验设置}{75}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}PDL参数实验结果}{76}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}NOMDL参数实验结果}{76}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}BR参数实验结果}{77}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}本章小结}{78}{section.5.3}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}总结与展望}{79}{chapter.6}%
+\contentsline {section}{\numberline {6.1}论文工作总结}{79}{section.6.1}%
+\contentsline {section}{\numberline {6.2}未来工作展望}{80}{section.6.2}%
+\contentsline {chapter}{参考文献}{81}{section*.52}%
+\contentsline {chapter}{攻读学位期间的成果}{92}{chapter*.54}%
+\contentsline {chapter}{攻读学位期间的主要科研工作}{93}{chapter*.55}%
+\contentsline {chapter}{致谢}{94}{chapter*.56}%
 \contentsfinish 

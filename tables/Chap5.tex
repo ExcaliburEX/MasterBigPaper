@@ -1,0 +1,19 @@
+\begin{table}[tb!]
+	\centering
+	\caption{（n个）}
+	\begin{tabular}{lcccc}
+		\toprule
+		字段名称      & 数据类型     & 主键 & 是否空 & 说明             \\[1pt]
+		\midrule
+		\\[-15pt]
+		user$\_$code  & varchar(50)  & Y    & N      & 主键，用户标识ID \\
+		user$\_$name  & varchar(20)  & N    & N      & 用户名           \\
+		password      & varchar(20)  & N    & N      & 密码             \\
+		user$\_$email & varchar(50)  & N    & N      & 邮箱             \\
+		public$\_$key & mediumtext   & N    & N      & 公钥             \\
+		comment       & varchar(255) & N    & N      & 备注信息         \\
+		\bottomrule
+	\end{tabular}
+	\label{table:5-1}
+\end{table}
+

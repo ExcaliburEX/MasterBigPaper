@@ -8,6 +8,9 @@ A level-1 auxiliary file: content/abstract-en.aux
 A level-1 auxiliary file: content/1.introduction.aux
 A level-1 auxiliary file: content/2.xxx.aux
 A level-1 auxiliary file: content/3.xxx.aux
+A level-1 auxiliary file: content/4.xxx.aux
+A level-1 auxiliary file: content/5.xxx.aux
+A level-1 auxiliary file: content/6.conclusion.aux
 A level-1 auxiliary file: content/achievement.aux
 A level-1 auxiliary file: content/work.aux
 A level-1 auxiliary file: content/thanks.aux
@@ -20,45 +23,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: reference.bib
 Warning--empty journal in dean2004mapreduce
-You've used 105 entries,
+You've used 109 entries,
             4952 wiz_defined-function locations,
-            1550 strings with 29741 characters,
-and the built_in function-call counts, 995876 in all, are:
-= -- 17140
-> -- 118600
-< -- 148973
-+ -- 40639
-- -- 6649
-* -- 5375
-:= -- 137624
-add.period$ -- 315
-call.type$ -- 105
-change.case$ -- 207
-chr.to.int$ -- 36852
-cite$ -- 106
-duplicate$ -- 2217
-empty$ -- 6711
-format.name$ -- 4196
-if$ -- 258955
+            1570 strings with 30485 characters,
+and the built_in function-call counts, 1026966 in all, are:
+= -- 17686
+> -- 122277
+< -- 153588
++ -- 41892
+- -- 6860
+* -- 5532
+:= -- 141886
+add.period$ -- 327
+call.type$ -- 109
+change.case$ -- 215
+chr.to.int$ -- 37989
+cite$ -- 110
+duplicate$ -- 2299
+empty$ -- 6962
+format.name$ -- 4306
+if$ -- 267084
 int.to.chr$ -- 4
-int.to.str$ -- 106
+int.to.str$ -- 110
 missing$ -- 0
-newline$ -- 603
-num.names$ -- 315
-pop$ -- 53108
+newline$ -- 625
+num.names$ -- 327
+pop$ -- 54874
 preamble$ -- 1
-purify$ -- 105
+purify$ -- 109
 quote$ -- 0
-skip$ -- 104694
+skip$ -- 107877
 stack$ -- 0
-substring$ -- 44853
-swap$ -- 119
-text.length$ -- 2049
+substring$ -- 46257
+swap$ -- 123
+text.length$ -- 2108
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1241
+type$ -- 1283
 warning$ -- 1
-while$ -- 2544
+while$ -- 2621
 width$ -- 0
-write$ -- 1469
+write$ -- 1524
 (There was 1 warning)

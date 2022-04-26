@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+	% \setlength{\tabcolsep}{2.9pt}
+	\centering
+	\caption{不同系统负载情况下的编码分配方案}
+	\begin{tabular}{clcc}
+		\toprule
+        \multicolumn{2}{c}{\multirow{1}*{编码策略}}  & LRC$(k,l,g)$             & HH$(k,m)$    \\[2pt]
+        \hline
+		\\[-15pt]
+        \multirow{3}{*}{读写负载模式} & $RWCost_{compute}$ & $\frac{\beta}{l(1+\beta)} \gamma kr$ & $\frac{\gamma \beta kmr}{2(1+\beta)(m-1)}$  \\
+                                & $RWCost_{I/O}$ & $\frac{\gamma}{\phi}$ & $\frac{\gamma}{\phi}$  \\
+                                & $RWCost_{transmission}$ & $1 + \frac{\beta}{k(1 + \beta)} \cdot rl$ & $1 + \frac{\beta}{1 + \beta} \cdot \frac{2r(m-1)}{km}$  \\
+        \hline
+        \\[-15pt]                        
+        \multirow{3}{*}{修复负载模式} & $RecoverCost_{compute}$ & $r^3 + \frac{kr^2}{l} + \frac{k\gamma}{l}$ & $r^3 + \frac{km(r^2+\gamma)}{2(m-1)}$  \\
+        & $RecoverCost_{I/O}$ & $\frac{\gamma}{\phi}$ & $\frac{\gamma}{\phi}$  \\
+        & $RecoverCost_{transmission}$ & $\frac{k}{l}$ & $\frac{km}{2(m-1)}$  \\
+		\midrule
+	\end{tabular}
+	\label{table:4-2}
+\end{table}
+

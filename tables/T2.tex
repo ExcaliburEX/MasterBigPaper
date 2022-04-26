@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+	% \setlength{\tabcolsep}{2.9pt}
+	\centering
+	\caption{不同系统负载情况下的编码分配方案}
+	\begin{tabular}{cccc}
+		\toprule
+        \multicolumn{2}{c}{\multirow{2}*{编码策略}}          & \multicolumn{2}{c}{修复负载} \\
+         &                                      & 高风险             & 低风险    \\[2pt]
+        \hline
+		\\[-15pt]
+        \multirow{3}{*}{系统负载} & 写入密集型 & LRC或HH & Hitchhiker  \\
+                                                & 读取密集型 & LRC & Hitchhiker  \\
+                                                & 冷数据 & Hitchhiker & Hitchhiker  \\
+		\midrule
+	\end{tabular}
+	\label{table:4-1}
+\end{table}
+

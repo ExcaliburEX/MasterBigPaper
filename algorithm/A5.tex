@@ -1,0 +1,33 @@
+\begin{algorithm}[tb!]
+	\begin{algorithmic}[1]
+		% \newlength{\commentindent}
+		\setlength{\commentindent}{.3\textwidth}
+		\setlength{\algorithmicindent}{1.5em}
+		\renewcommand{\algorithmiccomment}[1]{\unskip\hfill\makebox[\commentindent][l]{$\rhd$~#1}\par}
+		\LetLtxMacro{\oldalgorithmic}{\algorithmic}
+		\renewcommand{\algorithmic}[1][0]{
+			\oldalgorithmic[#1]
+			\renewcommand{\ALC@com}[1]{
+				\IFnum\pdfstrcmp{##1}{default}=0\ELSE\algorithmiccomment{##1}\fi}%
+		}
+		\REQUIRE{HH码中的两个子条带$s_a$和$s_b$}
+		\ENSURE{LRC码中的两个子条带$a$和$b$}
+        \STATE $a.data := s_a.data$
+        \STATE $b.data := s_b.data$
+        \STATE $a.global$\_$parity := s_a.parity$
+        \STATE $b.global$\_$parity[1] := s_b.parity[1]$
+        \FOR{$i:=1 \, to \, t-1$}
+        \STATE $a.local$\_$parity[i] := 0$
+        \STATE $b.local$\_$parity[i] := 0$
+            \FOR{$G_i$中的每个块$j$}
+                \STATE $a.local$\_$parity[i] := a.local$\_$parity[i] \oplus a.data[j]$
+                \STATE $b.local$\_$parity[i] := b.local$\_$parity[i] \oplus b.data[j]$
+            \ENDFOR
+        \ENDFOR
+        \FOR{$i:=2 \, to \, t$}
+            \STATE $b.global$\_$parity[i] := s_b.parity[i] \oplus a.local$\_$parity[i-1]$
+        \ENDFOR
+	\end{algorithmic}
+	\caption{HH$(k,t) \rightarrow$ LRC$(k,t-1,t) $ 算法}
+	\label{alg:4-3}
+\end{algorithm}

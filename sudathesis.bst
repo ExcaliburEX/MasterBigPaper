@@ -1896,6 +1896,16 @@ FUNCTION {unpublished} { misc }
 
 FUNCTION {default.type} { misc }
 
+% FUNCTION {default.is.forced.et.al}
+
+% FUNCTION {default.max.num.names.before.forced.et.al}
+
+% FUNCTION {default.num.names.shown.with.forced.et.al}
+% FUNCTION {bbl.etal}{ ",~et~al." }
+
+% FUNCTION {format.names}
+% { "" * bbl.etal emphasize * }
+
 MACRO {jan} {"January"}
 
 MACRO {feb} {"February"}

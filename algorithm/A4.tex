@@ -1,0 +1,25 @@
+\begin{algorithm}[htbp]
+	\begin{algorithmic}[1]
+		% \newlength{\commentindent}
+		\setlength{\commentindent}{.3\textwidth}
+		\setlength{\algorithmicindent}{1.5em}
+		\renewcommand{\algorithmiccomment}[1]{\unskip\hfill\makebox[\commentindent][l]{$\rhd$~#1}\par}
+		\LetLtxMacro{\oldalgorithmic}{\algorithmic}
+		\renewcommand{\algorithmic}[1][0]{
+			\oldalgorithmic[#1]
+			\renewcommand{\ALC@com}[1]{
+				\IFnum\pdfstrcmp{##1}{default}=0\ELSE\algorithmiccomment{##1}\fi}%
+		}
+		\REQUIRE{LRC中的两个子条带$a$和$b$}
+		\ENSURE{HH码中的两个子条带$s_a$和$s_b$}
+        \STATE $s_a.data := a.data$
+        \STATE $s_b.data := b.data$
+        \STATE $s_a.parity := a.global$\_$parity$
+        \STATE $s_b.parity[1] := b.global$\_$parity[1]$
+        \FOR{$i:=2 \, to \, t$}
+        \STATE $s_b.parity[i] := b.global$\_$parity[i] \oplus a.local$\_$parity[i-1]$
+        \ENDFOR
+	\end{algorithmic}
+	\caption{LRC$(k,t-1,t)\rightarrow $ HH$(k,t)$算法}
+	\label{alg:4-2}
+\end{algorithm}

@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+	% \setlength{\tabcolsep}{2.9pt}
+    \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}} %放在导言区
+	\centering
+	\caption{容错存储原型系统纠删码操作接口}
+	\begin{tabular}{cll}
+		\toprule
+        接口操作  & 输入 & 输出 \\[1pt]
+		% \midrule
+		\\[-15pt]
+        \multirow{3}{*}{\tabincell{c}{encode \\ decode}} & data file, codec; & parity file \\
+                                    & data file, parity file &  \\
+                                    & codec, lost block index & recovered block \\
+        \hline
+        \\[-15pt]                         
+        \multirow{4}{*}{\tabincell{c}{upcode \\ downcode}} 
+        & parity file, original fast codec & parity file encoded with compact codec \\
+        & new compact codec; & \\
+        & data file, parity file & parity file encoded with fast codec\\
+        & original compact codec, new fast codec & \\
+		\midrule
+	\end{tabular}
+	\label{table:5-1}
+\end{table}
+

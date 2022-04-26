@@ -84,7 +84,7 @@
         "%LINE%",
         "-reuse-instance",
         "-inverse-search",
-        "\"D:\\Software\\Microsoft VS Code\\Code.exe\" \"D:\\Software\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -gr \"%f\":\"%l\"",
+        "\"D:\\Software\\Microsoft VS Code\\Code.exe\" \"D:\\Software\\Microsoft VS Code\\resources\\app\\out\\cli.js\"  --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
         "%PDF%"
     ],
     "latex-workshop.view.pdf.external.synctex.command": "D:/Software/SumatraPDF/SumatraPDF.exe",
@@ -94,7 +94,7 @@
         "%LINE%",
         "-reuse-instance",
         "-inverse-search",
-        "\"D:\\Software\\Microsoft VS Code\\Code.exe\" \"D:\\Software\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -gr \"%f\":\"%l\"",
+        "\"D:\\Software\\Microsoft VS Code\\Code.exe\" \"D:\\Software\\Microsoft VS Code\\resources\\app\\out\\cli.js\"  --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
         // "\"D:/Software/Microsoft VS Code/Code.exe\" \"D:/Software/Microsoft VS Code/resources/app/out/cli.js\" -gr \"%f\":\"%l\"",
         "%PDF%",
     ],

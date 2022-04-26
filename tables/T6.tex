@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+	% \setlength{\tabcolsep}{2.9pt}
+    % \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}} %放在导言区
+	\centering
+	\caption{默认故障和修复事件统计模型表}
+	\begin{tabular}{lll}
+		\toprule
+        故障类型  & 故障时间 & 修复时间 \\[1pt]
+		% \midrule
+        \hline
+        \\[-15pt]  
+        Permanent disk failures & $W(1.12, 10 years, 0)$ & $\frac{cross-rack\,\,repair\,\,traffic}{cross-rack\,\,bandwitdth}$ \\
+        Permanent node failures & $EXP\left( \frac{1}{125 months} \right) $ &  \\
+        Transient node failures & $EXP\left( \frac{1}{4 months} \right) $ & $EXP\left( \frac{1}{0.25 hours} \right) $ \\
+        Transient rack failures & $EXP\left( \frac{1}{10 years} \right) $ & $W(1, 24 hours, 10)$ \\
+        Permanent correlated failures & $EXP\left( \frac{1}{1 year} \right) $ & $EXP\left( \frac{1}{15 hours} \right) $ \\
+		\midrule
+	\end{tabular}
+	\label{table:5-2}
+\end{table}
+

@@ -1,4 +1,4 @@
-\begin{thebibliography}{105}
+\begin{thebibliography}{109}
 \providecommand{\biband}{和}
 \providecommand{\bibetal}{等}
 \providecommand{\natexlab}[1]{#1}
@@ -760,5 +760,34 @@ Zhang~M, Han~S, Lee~P~P.
   data centers [J].
 \newblock IEEE Transactions on Parallel and Distributed Systems, 2019,
   30\penalty0 (12): 2836-2848.
+
+\bibitem[Ma {\bibetal}(2013)Ma, Nandagopal, Puttaswamy, and
+  Banerjee]{ma2013ensemble}
+Ma~Y, Nandagopal~T, Puttaswamy~K~P, Banerjee~S.
+\newblock An ensemble of replication and erasure codes for cloud file systems
+  [C]//\allowbreak
+2013 Proceedings IEEE INFOCOM.
+\newblock IEEE, 2013: 1276-1284.
+
+\bibitem[Friedman {\bibetal}(2014)Friedman, Kantor, and
+  Kantor]{friedman2014replicated}
+Friedman~R, Kantor~Y, Kantor~A.
+\newblock Replicated erasure codes for storage and repair-traffic efficiency
+  [C]//\allowbreak
+14-th IEEE International Conference on Peer-to-Peer Computing.
+\newblock IEEE, 2014: 1-10.
+
+\bibitem[Narayanan {\bibetal}(2008)Narayanan, Donnelly, and
+  Rowstron]{narayanan2008write}
+Narayanan~D, Donnelly~A, Rowstron~A.
+\newblock Write off-loading: Practical power management for enterprise storage
+  [J].
+\newblock ACM Transactions on Storage (TOS), 2008, 4\penalty0 (3): 1-23.
+
+\bibitem[Greenan(2009)]{greenan2009reliability}
+Greenan~K~M.
+\newblock Reliability and power-efficiency in erasure-coded storage systems
+  [M].
+\newblock University of California, Santa Cruz, 2009.
 
 \end{thebibliography}
